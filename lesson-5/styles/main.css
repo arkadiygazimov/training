@@ -54,7 +54,7 @@ input:checked ~ span {
 }
 .text {
     width: 30%;
-    padding-left: 5%;
+    padding-left: 0.5em;
     font-size: larger;
     position:inherit;
 }
@@ -92,8 +92,8 @@ input {
     height: 15px;
     border: 2px solid white;
     position: relative;
-    top: 6px;
-    left: 15px;
+    top: 0.2em;
+    left: 0.1em;
 }
 .checkbox::before {
     text-align: center;
