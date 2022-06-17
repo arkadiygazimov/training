@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+.container {
+    margin: 10em 10% 10em 10%;
+    width: 80%;
+    box-shadow: 0 0 3em rgba(0,0,0,0.1);
+}
+.content {
+    padding: 10em 10% 10em 10%;
+}
+.header-text {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3em;
+
+}
+.text {
+    padding-top: 2em;
+    line-height: 2em;
+    color: rgba(95, 101, 107, 0.8);
+    font-size: 1.1em;
+}
+.big-letter {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 6.3em;
+    float: left;
+    padding-top: 0.2em;
+}
+.quote {
+    display: inline-block;
+    margin-top: 1em;
+    color: rgba(95, 101, 107, 0.8);
+    font-size: 1.2em;
+    font-style: italic;
+}
+.quote::before {
+    content: "\201C";
+    font-size: 3em;
+}
+.discover {
+    display: block;
+    margin-top: 2em;
+    background-color: rgb(255, 255, 255);
+    color: rgba(242,198,153,255);
+    border: 2px solid rgba(242, 197, 153, 0.8);
+    width: 10em;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 1.25em;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+}
+.discover:hover {
+    background-color: rgba(242, 197, 153, 0.8);
+    color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+}
+.discover:active {
+    background-color: rgb(255, 255, 255);
+    color: rgba(242,198,153,255);
+    border: 2px solid rgba(242, 197, 153, 0.8);
+}
