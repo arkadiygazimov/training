@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    background-color: #33373d;
+}
+.header-style {
+    background-color: #3f454d;
+}
+.header-content {
+    padding: 1em 0 1em 0;
+    color: #e7796b;
+    text-align: center;
+    line-height: 2em;
+}
+.header-content > h1 {
+    font-size: 1.8em;
+}
+.container {
+    margin: 1em 32.5% 0 32.5%;
+    width: 35%;
+}
+label {
+    display: inline-block;
+    width: 100%;
+}
+.list1 {
+    padding: 1em 0 1em 1em;
+    background-color: #88839e;
+    color: #ffffff;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+.list1:nth-child(2n) {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background-color: #7a7593;
+}
+.list1:hover {
+    transition: 1s;
+    background-color: #625e77;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.list1:active {
+    background-color: #e7796b;
+    transition: 1s;
+}
+input:checked ~ span {
+    text-decoration: line-through;
+    color: #9795ac;
+    transition: 1s;
+}
+.text {
+    width: 30%;
+    padding-left: 0.5em;
+    font-size: larger;
+    position:inherit;
+}
+.text > span {
+    font-size: small;
+}
+.smile:before {
+    content: " ^_^ ";
+    font-size: larger;
+}
+.footer-style {
+    margin: 1em 32.5% 0 32.5%;
+    width: 35%;
+    background-color: #3f454d;
+    text-align: center;
+}
+.footer-content {
+    color: #e7796b;
+    text-align: center;
+    font-size: larger;
+    padding: 1em 0 1em 0;
+    display: inline-block;
+    text-decoration: none;
+}
+.footer-content::after {
+    content: " :)";
+}
+/* checkbox */
+input {
+    display: none;
+}
+.checkbox {
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    position: relative;
+    top: 0.2em;
+    left: 0.1em;
+}
+.checkbox::before {
+    text-align: center;
+    content: "\2714";
+    font-weight: bold;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+input:checked + .checkbox {
+    border: 2px solid #9795ac;
+}
+input:checked + .checkbox::before {
+    opacity: 1;
+    color: #9795ac;
+}

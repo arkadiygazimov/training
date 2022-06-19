@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(153,9,9);
+}
+/* header */
+  nav {
+    background-color: black;
+  }
+.company {
+    margin: 30px 0 20px 0;
+    padding-left: 28px;
+    font-size: 1.08em;
+    letter-spacing: 7px;
+    text-align: center;
+    color: #ffffff;
+}
+  .nav-block {
+    padding: 35px 60px 10px 75px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    display:inline-block;
+}
+.nav-block > a {
+    padding-top: 5px;
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-line {
+    height: 2px;
+    margin: 0;
+    border: 0;
+    background: linear-gradient(to right, rgb(153,9,9) 25%, #ffffff 50%, rgb(153,9,9) 75%);
+  }
+.side-nav > a:hover, .nav-block > a:hover {
+    color:red;
+}
+.image-style {
+    width: 240px;
+    height: 180px;
+}
+/* /header */
+
+/* left-side */
+.side-nav {
+    width: 320px;
+    height: 465px;
+    margin: 5px 0 30px 5px;
+    background-color: rgb(125,9,9);
+    border-radius: 2%;
+    line-height: 3em;
+    float: left;
+}
+.sidebar {
+    background-color: rgb(125,9,9);
+    color: rgb(233,91,17);
+    font-size: 1.5em;
+    margin: 10px 0 10px 5px;
+}
+/* left-side */
+
+/* main-content */
+.content {
+    width: 920px;
+    font-size: 1.5em;
+    padding: 0 10px 0 10px;
+    float: left;
+}
+.text {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* /main-content */
+
+/* right-side */
+.side-content {
+    width: 240px;
+    height: 465px;
+    margin: 5px 5px 0 0;
+    background-color: rgb(227,221,221);
+    border-radius: 2%;
+    float: right;
+}
+.side-content > h2 {
+    background-color: rgb(189,189,189);
+    text-align: center;
+}
+.side-content > span {
+    display: inline-block;
+    padding: 20px 5px 20px 5px;
+    background-color: rgb(227,221,221);
+    font-size: 1.5em;
+}
+.side-line {
+    margin: 10px 60px 0 60px;
+    background-color: silver;
+    height: 2px;
+}
+/* /right-side */
+
+/* footer */
+.footer-type {
+    text-align: center;
+    background-color: rgb(233,91,17);
+    clear: both;
+}
+.footer-content {
+    margin-bottom: 50px;
+    background-color: rgb(233,91,17);
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* /footer */
