@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(70,79,84);
+}
+.container {
+    margin: 10em 5% 7em 5%;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 0 3em rgba(0,0,0,0.3);
+    display: flex;
+}
+.vl {
+    border-left: 1px solid rgba(0,0,0,0.2);
+    margin-left: 5%;
+    flex-direction: row;
+}
+/* content */
+.content {
+    padding: 10em 10% 10em 5%;
+    font-size: 1.3em;
+    flex-direction: row;
+}
+.autor {
+    font-family: "Lato", sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    color: rgba(0,0,0,0.5);
+}
+.header-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0.2em ;
+    font-size: 2.7em;
+    letter-spacing: 0.1em;
+}
+.quote {
+    font-style: italic;
+    color: rgba(0,0,0,0.5);
+}
+.text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 1.5em;
+    font-size: 1.1em;
+}
+/* icons */
+.icons {
+    position: absolute;
+    top: 16em;
+    right: 0;
+    width: 50%;
+    height: 3em;
+    background-color: rgb(240,184,43);
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.check {
+    display: none;
+}
+.check:checked + .input-icons {
+    color: rgb(255,255,255);
+}
+.input-icons {
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* enter */
+.enter {
+    position: absolute;
+    top: 3em;
+    right: 0;
+    width: 60%;
+    height: 13em;
+    background-color: rgb(24,24,24);
+}
+.enter-content {
+    margin: 5em 0 0 7%;
+}
+.title {
+    font-family: "Lato", sans-serif;
+    color: rgba(255, 255, 255,0.5);
+    letter-spacing: 0.3em;
+}
+.enter-text {
+    display: block;
+    padding-top: 0.1em;
+    color: rgba(255, 255, 255,0.5);
+    background-color: rgb(24,24,24);
+    outline: none;
+    border: none;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hl {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+}
+@media(max-width: 850px)
+{
+.enter, .icons {
+    width: 100%;
+    text-align: center;
+}
+.input-icons {
+    font-size: 1em;
+}
+.enter {top: 0;}
+.icons {top: 13em}
+}
