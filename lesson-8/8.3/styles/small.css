@@ -1,0 +1,33 @@
+.small-container {
+    width: 31%;
+    background-color: var(--color-main);
+    display: flex;
+    flex-direction: column;
+}
+
+.small-image {
+    height: 45%;
+}
+
+.small-content {
+    height: 55%;
+    padding: 1.5em 0.5em 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-date {
+    height: 13%;
+}
+
+.small-link {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #000;
+}
+
+.small-autor {
+    width: 3em;
+    height: 3em;
+}
