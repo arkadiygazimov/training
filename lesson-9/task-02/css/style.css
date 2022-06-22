@@ -1,0 +1,107 @@
+.move-boat:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: url('../images/steam.png') no-repeat;
+    background-size: 120px;
+    position: absolute;
+    top: -53%;
+    left: -14%;
+    opacity: 0;
+  }
+  .move-boat{
+    position: absolute;
+    bottom:10px;
+    -webkit-transition: left 2s linear;
+    transition: left 2s ease-in;
+    left:100px;
+  }
+  .wave{
+    position: absolute;
+    bottom:0;
+    width: 1600px;
+    height:150px;
+    left:-50%;
+  }
+  .sun {
+    position: absolute;
+    right:0;
+  }
+  .cloud{
+    position: absolute;
+    right:-150px;
+    z-index:1;
+  }
+  .animation-box:hover .wave {
+    animation: wave 0.5s linear infinite;
+  }
+  @keyframes wave {
+    100% {
+       transform: translateX(-50px);
+    }
+  }
+  .animation-box:hover .boat {
+    animation: boat 2s linear infinite;
+  }
+  @keyframes boat {
+    30% {
+      transform: translateX(100px) rotate(5deg);
+      
+    }
+    60% {
+      transform: translateX(150px) rotate(-10deg);
+      
+    }
+  100% {
+    transform: translateX(200px) rotate(0deg);
+    
+    }
+  }
+  .animation-box:hover .sun {
+    animation: sun 5s linear infinite;
+  }
+  @keyframes sun {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .animation-box:hover .cloud {
+    animation: cloud 2s linear infinite;
+  }
+  @keyframes cloud {
+    50% {
+      transform: translateX(-80px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  .animation-box:hover {
+    animation: color 2s linear infinite;
+  }
+  @keyframes color {
+    50% {
+      transition: background-color 1s;
+      background-color: #262F37;
+    }
+  }
+  .animation-box:hover .move-boat:after {
+    animation: smoke 2s linear infinite;
+  }
+  @keyframes smoke {
+    30% {
+      transform: translateX(100px);
+      opacity: 1;
+      
+    }
+    60% {
+      transform: translateX(150px);
+      opacity: 0;
+      
+    }
+  100% {
+    transform: translateX(200px);
+    opacity: 1;
+    }
+  }
