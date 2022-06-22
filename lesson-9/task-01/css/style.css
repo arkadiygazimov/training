@@ -1,0 +1,38 @@
+.card-container {
+    perspective: 600px;
+    position: relative;
+    width: 225px;
+    height: 160px;
+  }
+  .card {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .card .side {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .card .back {
+    background: #393F45;
+    color: #fff;
+    line-height: 150px;
+    text-align: center;
+    font-size:15px;
+  }
+
+  div {
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */ backface-visibility: hidden;
+  }
+  .back {
+    transform: rotateY(180deg);
+    border-radius: 0.7em;
+  }
+  .card  {
+    transform-style: preserve-3d;
+  }
+  .card:hover {
+    transition: transform 2s;
+    transform: rotateY(180deg);
+  }
