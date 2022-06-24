@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 
-.main-content__image--scale {
+.main-content__image {
     width: 40em;
     height: 40em;
 }
@@ -36,13 +36,13 @@ body {
     justify-content: space-between;
 }
 
-.main-content__article--title {
+.main-content__title {
     font-size: 4em;
     font-family: var( --font-content);
     font-weight: bold;
 }
 
-.main-content__article--text {
+.main-content__text {
     padding-bottom: 1em;
     font-family: var( --font-content);
 }

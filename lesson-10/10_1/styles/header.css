@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.header-top__logo--text {
+.header-top__logo {
     font-size: 2.5em;
     font-weight: 700;
     font-style: italic;
@@ -27,7 +27,7 @@
     width: 37%;
 }
 
-.header-nav-list {
+.header-nav__list {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -67,19 +67,19 @@
     justify-content: space-between;
 }
 
-.header-content__title--style {
+.header-content__title {
     font-size: 3.5em;
     font-weight: bold;
     font-family: var(--font-main);
 }
 
-.header-content__text--style {
+.header-content__text {
     font-size: 1.15em;
     font-family: var( --font-content);
     color: rgba(0, 0, 0, 0.5);
 }
 
-.header-button-content {
+.header-button {
     transition: width 1s;
     width: 60%;
     height: 4em;
@@ -88,13 +88,13 @@
     border: 0;
 }
 
-.header-button-content:hover {
+.header-button:hover {
     transition: width 1s;
     width: 100%;
     cursor: pointer;
 }
 
-.header-button-content--text {
+.header-button__text {
     font-size: 1.5em;
     text-transform: uppercase;
     font-family: var( --font-main);
