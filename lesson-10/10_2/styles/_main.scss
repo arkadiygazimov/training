@@ -19,29 +19,36 @@ body {
     background-color: $primary-background;
     box-shadow: 0 0 2em #000;
     border-radius: 0.5em;
+
+    &__logo {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        padding-left: 4.5%;
+    }
+    &__main-content {
+        margin: 0 auto;
+        width: 83%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
-.logo {
-    height: 20%;
-    display: flex;
-    align-items: center;
-    padding-left: 4.5%;
-}
-.content {
-    margin: 0 auto;
-    width: 83%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
+.main-content {
+
+    &__product-container {
+        width: 65%;
+        margin-top: 10%;
+    }
 }
 .product-container {
-    width: 65%;
-    margin-top: 10%;
-}
-.poduct-content {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+    &__poduct-content {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 .slider {
     margin: 0 auto;
@@ -58,11 +65,25 @@ body {
         border-radius: 50%;
         border: transparent;
         transition: 0.5s;
-    }
-    &__btn:hover {
-        transition: box-shadow 0.5s;
-        box-shadow:0 0 5px #fff, inset 0 0 5px #fff;
-        cursor: pointer;
+
+        &:hover {
+            transition: box-shadow 0.5s;
+            box-shadow:0 0 5px #fff, inset 0 0 5px #fff;
+            cursor: pointer;
+        }
+
+        &--blue {
+            background-color: #1200ff;
+        }
+        &--white {
+            background-color: #fff
+        }
+        &--red {
+            background-color: #ff0000;
+        }
+        &--aqua {
+            background-color: #00ffe4;
+        }
     }
 }
 .slider--blue {
@@ -77,7 +98,7 @@ body {
 .slider--aqua {
     background-color: #00ffe4;
 }
-.product-description {
+.description {
     width: 35%;
     height: 35vh;
     display: flex;
@@ -95,22 +116,18 @@ body {
 
 		&__select {
             display: flex;
-		}
-        &__size,
-        &__qty,
-        &__option {
-            display: flex;
-            padding: 0.5em;
-            background-color: transparent;
-            border:1px solid $primary-color;
-            color: $primary-color;
-		}
-        &__qty {
-            margin-left: 0.2em;
         }
-        &__option {
-            background-color: $primary-background;
-        }
+    }
+.select {
+
+    &__option {
+        display: flex;
+        padding: 0.5em;
+        background-color: $primary-background;
+        border:1px solid $primary-color;
+        color: $primary-color;
+        margin-left: 0.2em;
+    }
 }
 .golden {
     color: #f7bf16;
