@@ -1,6 +1,10 @@
 .pricing-container {
     font-family: $font-family-main;
     background-color: $bg-color;
+    background-image: url(../img/pricing_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 97.5% 100%;
+    background-position: left bottom;
     color: $font-color-main;
     height: 530px;
 }
@@ -9,7 +13,7 @@
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    margin-top: -4em;
+    margin-top: -5.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
