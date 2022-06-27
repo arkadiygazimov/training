@@ -17,12 +17,6 @@
     justify-content: space-between;
     align-items: center;
 
-    &__title {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 42px;
-    }
-
     &__plan {
         width: 100%;
         display: flex;
@@ -35,9 +29,6 @@
     &__box {
         width: 364px;
         height: 357.09px;
-        background-color: $bg-color-secondary;
-        border-radius: 8px;
-        box-shadow: 0px 8px 20px rgba(184, 184, 184, 0.2);
 
         &--yellow {
             background-image: url(../img/wave_yellow.svg);
@@ -112,17 +103,5 @@
         font-size: 18px;
         font-weight: 600;
         color: $font-color-fourth;
-    }
-}
-
-.button {
-    width: 108px;
-    height: 48px;
-    background-color: $bg-color-secondary;
-    border-radius: 6px;
-    border: 1px solid $color-border-third;
-    cursor: pointer;
-    &__text {
-        font-weight: 600;
     }
 }

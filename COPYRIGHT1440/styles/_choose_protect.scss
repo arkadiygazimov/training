@@ -1,0 +1,55 @@
+.chouse-container {
+    height: 654px;
+    margin-top: 50px;
+    background-image: url(../img/chouse_Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 1379px 0;
+}
+
+.chouse {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__content {
+        height: 428px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__subtitle {
+        margin-top: -40px;
+        color: $font-color-fifth;
+    }
+
+    &__box {
+        margin-left: 10px;
+        width: 189px;
+        height: 186px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        &--end {
+            align-self: flex-end;
+        }
+    }
+
+    &__icon {
+        width: 60.63px;
+        height: 51px;
+    }
+
+    &__text {
+        margin-top: -4em;
+        line-height: 1.2em;
+        font-weight: 600;
+    }
+}
