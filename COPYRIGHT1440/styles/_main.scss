@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 
+.bg {
+    font-family: $font-family-main;
+    background-color: $bg-color;
+}
+
 .main-container {
     margin-top: -12em;
     padding-top: 285px;
-    font-family: $font-family-main;
-    background-color: $bg-color;
     background-image: url(../img/patterns.svg);
     background-size: 99% 100%;
     background-position: right;
     background-repeat: no-repeat;
     height: 87vh;
 }
+
 .main {
     width: 80%;
     height: 340px;

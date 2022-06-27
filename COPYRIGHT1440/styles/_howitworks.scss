@@ -1,0 +1,84 @@
+.instruction-container {
+    background-image: url(../img/howitworks_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 97% 100%;
+    height: 462px;
+    margin-top: 94px;
+    display: flex;
+    justify-content: center;
+}
+
+.instruction {
+    padding-top: 56px;
+    width: 80%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        margin-left: 20px;
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+
+    &__content {
+        width: 100%;
+        height: 212px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.icn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__elipse {
+        width: 88px;
+        height: 88px;
+        background-color: $bg-color-secondary;
+        box-shadow: 0px 8px 20px rgba(184, 184, 184, 0.2);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        padding-top: 35px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &__text {
+        color: $font-color-secondary;
+        text-align: center;
+    }
+
+    &--fill {
+        width: 180px;
+    }
+
+    &--upload {
+        width: 230px;
+        margin-left: 30px;
+    }
+
+    &--register {
+        width: 205px;
+        margin-left: 30px;
+    }
+
+    &--life {
+        width: 240px;
+    }
+}
