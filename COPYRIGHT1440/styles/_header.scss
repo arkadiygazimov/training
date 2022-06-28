@@ -46,11 +46,6 @@
         width: 190px;
         height: 40px;
     }
-
-    &__login {
-        width: 106px;
-        height: 40px;
-    }
 }
 
 .phone {
@@ -78,24 +73,6 @@
         padding-right: 0.5em;
         color: $font-color-main;
         text-decoration: none; 
-
-        &:hover {
-            color: $font-color-hover;
-        }
-    }
-}
-
-.login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid $color-border-secondary;
-    border-radius: 0.5em;
-    background-color: $bg-color;
-    cursor: pointer;
-    
-    &__text {
-        color: $font-color-main;
 
         &:hover {
             color: $font-color-hover;

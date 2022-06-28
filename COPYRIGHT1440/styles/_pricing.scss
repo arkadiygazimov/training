@@ -26,23 +26,6 @@
 
 .plan {
 
-    &__box {
-        width: 364px;
-        height: 357.09px;
-
-        &--yellow {
-            background-image: url(../img/wave_yellow.svg);
-        }
-
-        &--blue {
-            background-image: url(../img/wave_blue.svg);
-        }
-
-        &--orange {
-            background-image: url(../img/wave_orange.svg);
-        }
-    }
-
     &__content {
         margin-top: 85px;
         width: 100%;
@@ -85,23 +68,5 @@
         color: $font-color-main;
         font-weight: 600;
         margin-bottom: 15px;
-    }
-
-    &__started {
-        width: 316px;
-        height: 48px;
-        border: 1px solid $color-border-fourth;
-        border-radius: 8px;
-        background-color: transparent;
-        cursor: pointer;
-    }
-}
-
-.started {
-
-    &__text {
-        font-size: 18px;
-        font-weight: 600;
-        color: $font-color-fourth;
     }
 }

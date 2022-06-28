@@ -10,34 +10,10 @@
     color: $font-color-main;
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 42px;
-}
-
-.subtitle {
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 400;
-}
-
 .box {
     background-color: $bg-color-secondary;
     border-radius: 8px;
     box-shadow: 0px 8px 20px rgba(184, 184, 184, 0.2);
-}
-
-.button {
-    width: 108px;
-    height: 48px;
-    background-color: $bg-color-secondary;
-    border-radius: 6px;
-    border: 1px solid $color-border-third;
-    cursor: pointer;
-    &__text {
-        font-weight: 600;
-    }
 }
 
 .main-container {
@@ -83,40 +59,15 @@
     }
 
     &__title {
-        font-size: 70px;
-        font-weight: 700;
-        line-height: 56px;
-        color: $font-color-main;
-    }
 
-    &__subtitle {
+        &--submain {
         margin-bottom: 0.5em;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 44px;
-        color: $font-color-main;
+        }
     }
 
     &__text {
         font-size: 18px;
         color: $font-color-secondary;
         line-height: 24px;
-    }
-
-    &__btn {
-        width: 176px;
-        height: 48px;
-    }
-}
-
-.btn {
-    background: linear-gradient(266.21deg, #2196F5 -11.46%, #0868C6 100%);
-    box-shadow: 0px 7px 18px -8px rgba(39, 125, 201, 0.88);
-    border-radius: 8px;
-    border: 2px solid transparent;
-    cursor: pointer;
-
-    &__text {
-        color: $font-color-third;
     }
 }
