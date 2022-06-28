@@ -1,6 +1,7 @@
 .header {
     margin: 0 auto;
-    width: 80%;
+    width: $container-width;
+    max-width: $container-width-max;
     height: 88px;
     display: flex;
     justify-content: space-between;
@@ -13,7 +14,8 @@
     }
 
     &__nav {
-        width: 461px;
+        width: 460px;
+        margin: 0 5px;
     }
 
     &__func {

@@ -8,8 +8,9 @@
 }
 
 .pricing {
-    width: 80%;
+    width: $container-width;
     height: 100%;
+    max-width: $container-width-max;
     margin: 0 auto;
     margin-top: -5.5em;
     display: flex;
@@ -25,6 +26,9 @@
 }
 
 .plan {
+    &__box {
+        margin: 0 5px;
+    }
 
     &__content {
         margin-top: 85px;
