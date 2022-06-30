@@ -1,0 +1,50 @@
+.achievements-container {
+    background-color: $bg-color-secondary;
+    text-align: center;
+
+    &__achievements {
+        padding-top: 104px;
+    }
+
+    &__title {
+        margin-top: 104px;
+    }
+
+    &__companies {
+        margin-top: 52px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        margin: 50px auto 0;
+        padding-bottom: 150px;
+    }
+}
+
+.achievements {
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__elipse {
+        margin: 0 auto;
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-color-third;
+        border-radius: 50%;
+    }
+
+    &__title {
+        margin-top: 32px;
+    }
+
+    &__text {
+        margin-top: 16px;
+    }
+}

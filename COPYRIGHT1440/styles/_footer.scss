@@ -1,0 +1,57 @@
+.footer-container {
+    background-color: $bg-color-footer;
+    background-image: url(../img/mailbg.svg);
+    background-repeat: no-repeat;
+    background-position: 73px -422px;
+}
+
+.footer-top {
+    width: $container-width;
+    max-width: $container-width-max;
+    margin: 0 auto;
+    padding: 50px 0 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow {
+
+    &__messengers {
+        width: 200px;
+        margin: 25px 0 0 8px;
+        color: $font-color-footer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+
+    &__list {
+        margin: 0 40px 0 5px;
+        display: grid;
+        grid-template-columns: 120px 60px 90px;
+        grid-column-gap: 140px;
+        grid-row-gap: 24px;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        line-height: 22px;
+        color: $font-color-footer;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    opacity: 0.8;
+
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+        color: $font-color-third;
+    }
+}

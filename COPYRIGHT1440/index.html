@@ -10,180 +10,389 @@
 </head>
 <body class="body">
     <div class="wrapper">
-        <header class="header-container">
-            <div class="header">
-                <div class="header__logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">UK Registration</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Copyright legal</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Featured prices</a></li>
-                    </ul>
-                </nav>
-                <div class="header__func func">
-                    <div class="func__phone phone">
-                        <div class="phone__contant">
-                            <img src="img/GB.svg" alt="uk-flag" class="phone__img">
-                            <span class="phone__vl"></span>
-                            <a href="tel:+44 20 3695 3183" class="phone__link">+44 20 3695 3183</a>
-                        </div>
+        <header class="header header--background">
+            <div class="header-top-container">
+                <div class="header-top">
+                    <div class="header-top__logo">
+                        <img src="img/logo.svg" alt="logo">
                     </div>
-                    <button class="func__login button button--login">
-                        <span class="button--logintext">Login</span>
-                    </button>
+                    <nav class="header-top__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">UK Registration</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Copyright legal</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Featured prices</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-top__func func">
+                        <div class="func__phone phone">
+                            <div class="phone__contant">
+                                <img src="img/GB.svg" alt="uk-flag" class="phone__img">
+                                <span class="phone__vl"></span>
+                                <a href="tel:+442036953183" class="phone__link">+44 20 3695 3183</a>
+                            </div>
+                        </div>
+                        <button class="func__login button button--login">
+                            <span class="button--logintext">Login</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-container">
+                <div class="header-bottom">
+                    <div class="header-bottom__registration registration">
+                        <div class="registration__contant">
+                            <h1 class="registration__title title title--main">COPYRIGHT</h1>
+                            <h2 class="registration__title registration__title--submain title title--submain">REGISTRATION IN THE UK</h2>
+                            <p class="registration__text">
+                                Copyright.co.uk is the UK choice for private online copyright registration services. 
+                                With a network of more than 50 websites worldwide.
+                            </p>
+                        </div>
+                        <button class="registration__button button button--registration">
+                            <span class="button--registertext">Registration</span>
+                        </button>
+                    </div>
+                    <img src="img/Group.svg" alt="group" class="main__img">
                 </div>
             </div>
         </header>
-        <main class="main-container">
-            <div class="main">
-                <div class="main__registration registration">
-                    <div class="registration__contant">
-                        <h1 class="registration__title title title--main">COPYRIGHT</h1>
-                        <h2 class="registration__title registration__title--submain title title--submain">REGISTRATION IN THE UK</h2>
-                        <p class="registration__text">
-                            Copyright.co.uk is the UK choice for private online copyright registration services. 
-                            With a network of more than 50 websites worldwide.
-                        </p>
+        <main>
+            <div class="pricing-container">
+                <div class="pricing">
+                    <h2 class="pricing__title title title--secondary">Our Pricing</h2>
+                    <div class="pricing__plan plan">
+                        <div class="plan__box box box--pricebox box--priceyellow">
+                            <div class="plan__content">
+                                <span class="plan__price">42</span>
+                                <span class="plan__title">CREATOR PLAN</span>
+                                <span class="plan__text">1 YouTube Video Registration</span>
+                                <a href="#" class="plan__link">Read more</a>
+                                <button class="plan__button button button--started">
+                                    <span class="button--startedtext">Get started</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="plan__box box box--pricebox box--priceblue">
+                            <div class="plan__content">
+                                <span class="plan__price">149</span>
+                                <span class="plan__title">WEB PLAN</span>
+                                <span class="plan__text">5 Automated Webcontent Registration</span>
+                                <a href="#" class="plan__link">Read more</a>
+                                <button class="plan__button button button--started">
+                                    <span class="button--startedtext">Get started</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="plan__box box box--pricebox box--priceorange">
+                            <div class="plan__content">
+                                <span class="plan__price">79</span>
+                                <span class="plan__title">VIDEO PLAN</span>
+                                <span class="plan__text">1 YouTube Video Registration</span>
+                                <a href="#" class="plan__link">Read more</a>
+                                <button class="plan__button button button--started">
+                                    <span class="button--startedtext">Get started</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <button class="registration__button button button--registration">
-                        <span class="button--registertext">Registration</span>
+                    <button class="pricing__button button button--view">
+                        <span class="button__viewtext">View all</span>
                     </button>
                 </div>
-                <img src="img/Group.svg" alt="group" class="main__img">
             </div>
-        </main>
-        <div class="pricing-container">
-            <div class="pricing">
-                <h2 class="pricing__title title title--secondary">Our Pricing</h2>
-                <div class="pricing__plan plan">
-                    <div class="plan__box box box--pricebox box--priceyellow">
-                        <div class="plan__content">
-                            <span class="plan__price">42</span>
-                            <span class="plan__title">CREATOR PLAN</span>
-                            <span class="plan__text">1 YouTube Video Registration</span>
-                            <a href="#" class="plan__link">Read more</a>
-                            <button class="plan__button button button--started">
-                                <span class="button--startedtext">Get started</span>
-                            </button>
+            <div class="instruction-container">
+                <div class="instruction">
+                    <h2 class="instruction__title title title--secondary">How it works?</h2>
+                    <div class="instruction__content">
+                        <div class="instruction__icn icn icn--fill">
+                            <div class="icn__elipse">
+                                <img src="img/pencil.svg" alt="icon">
+                            </div>
+                            <span class="icn__title">Fill you profile</span>
+                            <span class="icn__text">All information needed<br> about the owner</span>
                         </div>
-                    </div>
-                    <div class="plan__box box box--pricebox box--priceblue">
-                        <div class="plan__content">
-                            <span class="plan__price">149</span>
-                            <span class="plan__title">WEB PLAN</span>
-                            <span class="plan__text">5 Automated Webcontent Registration</span>
-                            <a href="#" class="plan__link">Read more</a>
-                            <button class="plan__button button button--started">
-                                <span class="button--startedtext">Get started</span>
-                            </button>
+                        <div class="instruction__icn icn icn--upload">
+                            <div class="icn__elipse">
+                                <img src="img/upload.svg" alt="icon">
+                            </div>
+                            <span class="icn__title">Upload your file</span>
+                            <span class="icn__text">This file contain your creation<br> DOCX, PDF, JPG, PNG.</span>
                         </div>
-                    </div>
-                    <div class="plan__box box box--pricebox box--priceorange">
-                        <div class="plan__content">
-                            <span class="plan__price">79</span>
-                            <span class="plan__title">VIDEO PLAN</span>
-                            <span class="plan__text">1 YouTube Video Registration</span>
-                            <a href="#" class="plan__link">Read more</a>
-                            <button class="plan__button button button--started">
-                                <span class="button--startedtext">Get started</span>
-                            </button>
+                        <div class="instruction__icn icn icn--register">
+                            <div class="icn__elipse">
+                                <img src="img/register.svg" alt="icon">
+                            </div>
+                            <span class="icn__title">Register</span>
+                            <span class="icn__text">Your document is instantly<br> signed and crypted</span>
+                        </div>
+                        <div class="instruction__icn icn icn--life">
+                            <div class="icn__elipse">
+                                <img src="img/copyright_icn.svg" alt="icon">
+                            </div>
+                            <span class="icn__title">Copyright for life</span>
+                            <span class="icn__text">You can access to your account<br> 24/7 and get your proof</span>
                         </div>
                     </div>
                 </div>
-                <button class="pricing__button button button--view">
+            </div>
+            <div class="choose-container">
+                <div class="choose">
+                    <h2 class="choose__title title title--secondary">Choose what you want to protect</h2>
+                    <h3 class="choose__title choose__title--subsecondary title title--subsecondary">Choose the type of creation you want to copyright</h3>
+                    <div class="choose__content">
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/book.svg" alt="sbicon1" class="choose__icon">
+                            <span class="choose__text">Register a Book</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/design.svg" alt="sbicon2" class="choose__icon">
+                            <span class="choose__text">Register a Design</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/register_logo.svg" alt="sbicon3" class="choose__icon">
+                            <span class="choose__text">Register a Logo</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/idea.svg" alt="sbicon4" class="choose__icon">
+                            <span class="choose__text">Register an Idea</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/video.svg" alt="sbicon5" class="choose__icon">
+                            <span class="choose__text">Register a Video</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/music.svg" alt="sbicon6" class="choose__icon">
+                            <span class="choose__text">Register a Music</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/document.svg" alt="sbicon7" class="choose__icon">
+                            <span class="choose__text">Register a Document</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/mobile.svg" alt="sbicon8" class="choose__icon">
+                            <span class="choose__text">Register a Mobile App</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/creation.svg" alt="sbicon9" class="choose__icon">
+                            <span class="choose__text">Register a Creation</span>
+                        </div>
+                        <div class="choose__box box box--smallbox ">
+                            <img src="img/smallbox/email.svg" alt="sbicon10" class="choose__icon">
+                            <span class="choose__text">Send a Certified Email</span>
+                        </div>
+                    </div>
+                    <button class="choose__button button  button--view">
+                        <span class="button--viewtext">View all</span>
+                    </button>
+                </div>
+            </div>
+            <div class="achievements-container">
+                <div class="achievements-container__achievements achievements">
+                    <div class="achievements__item">
+                        <div class="achievements__elipse">
+                            <img src="img/achievements/registred.svg" alt="Registered">
+                        </div>
+                        <h3 class="achievements__title">+500 000</h3>
+                        <p class="achievements__text">Registered Copyright</p>
+                    </div>
+                    <div class="inachievements__item">
+                        <div class="achievements__elipse">
+                            <img src="img/achievements/calls.svg" alt="Calls">
+                        </div>
+                        <h3 class="achievements__title">+1000</h3>
+                        <p class="achievements__text">Daily Calls</p>
+                    </div>
+                    <div class="instachievements__item">
+                        <div class="achievements__elipse">
+                            <img src="img/achievements/mails.svg" alt="Mails">
+                        </div>
+                        <h3 class="achievements__title">+500</h3>
+                        <p class="achievements__text">Daily Mails Replied</p>
+                    </div>
+                    <div class="achievements__item">
+                        <div class="achievements__elipse">
+                            <img src="img/achievements/Satisfied.svg" alt="customers">
+                        </div>
+                        <h3 class="achievements__title">+50 000</h3>
+                        <p class="achievements__text">Satisfied customers</p>
+                    </div>
+                </div>
+                <h2 class="achievements-container__title title title--secondary">Companies Who Trust Us</h2>
+                <div class="achievements-container__companies companies">
+                    <img src="img/companies/enser1.svg" alt="img1" class="companies__image">
+                    <img src="img/companies/cansor2.svg" alt="img2" class="companies__image">
+                    <img src="img/companies/odoo3.svg" alt="img3" class="companies__image">
+                    <img src="img/companies/peptone4.svg" alt="img4" class="companies__image">
+                    <img src="img/companies/ebay5.svg" alt="img5" class="companies__image">
+                    <img src="img/companies/dropbox6.svg" alt="img6" class="companies__image">
+                </div>
+                <div class="achievements-container__slider slider">
+                    <label class="slider__item">
+                        <input name="2" type="radio" class="slider__btn" checked>
+                        <span class="slider__fake fake"></span>
+                    </label>
+
+                    <label class="slider__item">
+                        <input name="2" type="radio" class="slider__btn">
+                        <span class="slider__fake fake"></span>
+                    </label>
+
+                    <label class="slider__item">
+                        <input name="2" type="radio" class="slider__btn">
+                        <span class="slider__fake fake"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="baner">
+                <h2 class="baner__title">Subscribe to our newsletter</h2>
+                <p class="baner__text">By subscribing here you accept the sales conditions of the website copyright.co.uk</p>
+                <div class="baner__subscribe subscribe">
+                    <form action="#" method="POST" enctype="multipart/form-data" class="subscribe__email email">
+                        <img src="img/Subscribe/Union.svg" alt="email" class="email__image">
+                        <label><input type="email" placeholder="Enter your email" maxlength="30" class="email__input"></label>
+                    </form>
+                    <button class="subscribe__button button button--email">
+                        <span class="button--emailtext">Subscribe</span>
+                    </button>
+                </div>
+            </div>
+            <div class="blog">
+                <h2 class="blog__title title title--secondary">Our Blog</h2>
+                <div class="blog__content">
+                    <div class="blog__box box box--ourblog box--howdo">
+                        <p class="blog__text">How Do I Protect My Idea For A Product?</p>
+                        <div class="blog__link">
+                            <a href="#" class="blog__read">Read more</a>
+                            <span class="blog__date">20.10.2021</span>
+                        </div>
+                    </div>
+                    <div class="blog__box box box--ourblog box--whattype">
+                        <p class="blog__text">What type of creation can I protect under copyright?</p>
+                        <div class="blog__link">
+                            <a href="#" class="blog__read">Read more</a>
+                            <span class="blog__date">19.10.2021</span>
+                        </div>
+                    </div>
+                    <div class="blog__box box box--ourblog box--whatis">
+                        <p class="blog__text">What is copyright registered by a public notary?</p>
+                        <div class="blog__link">
+                            <a href="#" class="blog__read">Read more</a>
+                            <span class="blog__date">19.10.2021</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="blog__button button button--view">
                     <span class="button__viewtext">View all</span>
                 </button>
             </div>
-        </div>
-        <div class="instruction-container">
-            <div class="instruction">
-                <h2 class="instruction__title title title--secondary">How it works?</h2>
-                <div class="instruction__content">
-                    <div class="instruction__icn icn icn--fill">
-                        <div class="icn__elipse">
-                            <img src="img/pencil.svg" alt="icon">
-                        </div>
-                        <span class="icn__title">Fill you profile</span>
-                        <span class="icn__text">All information needed<br> about the owner</span>
-                    </div>
-                    <div class="instruction__icn icn icn--upload">
-                        <div class="icn__elipse">
-                            <img src="img/upload.svg" alt="icon">
-                        </div>
-                        <span class="icn__title">Upload your file</span>
-                        <span class="icn__text">This file contain your creation<br> DOCX, PDF, JPG, PNG.</span>
-                    </div>
-                    <div class="instruction__icn icn icn--register">
-                        <div class="icn__elipse">
-                            <img src="img/register.svg" alt="icon">
-                        </div>
-                        <span class="icn__title">Register</span>
-                        <span class="icn__text">Your document is instantly<br> signed and crypted</span>
-                    </div>
-                    <div class="instruction__icn icn icn--life">
-                        <div class="icn__elipse">
-                            <img src="img/copyright_icn.svg" alt="icon">
-                        </div>
-                        <span class="icn__title">Copyright for life</span>
-                        <span class="icn__text">You can access to your account<br> 24/7 and get your proof</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="choose-container">
-            <div class="choose">
-                <h2 class="choose__title title title--secondary">Choose what you want to protect</h2>
-                <h3 class="choose__title choose__title--subsecondary title title--subsecondary">Choose the type of creation you want to copyright</h3>
-                <div class="choose__content">
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/book.svg" alt="sbicon1" class="choose__icon">
-                        <span class="choose__text">Register a Book</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/design.svg" alt="sbicon2" class="choose__icon">
-                        <span class="choose__text">Register a Design</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/register_logo.svg" alt="sbicon3" class="choose__icon">
-                        <span class="choose__text">Register a Logo</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/idea.svg" alt="sbicon4" class="choose__icon">
-                        <span class="choose__text">Register an Idea</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/video.svg" alt="sbicon5" class="choose__icon">
-                        <span class="choose__text">Register a Video</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/music.svg" alt="sbicon6" class="choose__icon">
-                        <span class="choose__text">Register a Music</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/document.svg" alt="sbicon7" class="choose__icon">
-                        <span class="choose__text">Register a <br>Document</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/mobile.svg" alt="sbicon8" class="choose__icon">
-                        <span class="choose__text">Register a Mobile App</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/creation.svg" alt="sbicon9" class="choose__icon">
-                        <span class="choose__text">Register a Creation</span>
-                    </div>
-                    <div class="choose__box box box--smallbox ">
-                        <img src="img/smallbox/email.svg" alt="sbicon10" class="choose__icon">
-                        <span class="choose__text">Send a Certified Email</span>
-                    </div>
-                </div>
-                <button class="choose__button button  button--view">
-                    <span class="button--viewtext">View all</span>
+            <div class="finally">
+                <h2 class="finally__title">Finally, get real copyrighter, which<br> you can put on your creation</h2>
+                <p class="finally__quote">Electronic Date Certain + Original Creation = Indisputable proof of prior rights.</p>
+                <p class="finally__text">The only service offering a copyright time-stamped with a notary instantly</p>
+                <button class="finally__button button button--start">
+                    <span class="button--starttext">Get Started</span>
                 </button>
             </div>
-        </div>
+            <div class="reviews-container">
+                <div class="reviews">
+                    <div class="reviews__cards cards">
+                        <div class="cards__box box box--reviewbox">
+                            <div class="cards__content">
+                                <img src="img/reviews/Ellipse_32.png" alt="photo" class="cards__image">
+                                <p class="cards__text">To protect my source code I use copyright.co.uk</p>
+                                <p class="cards__name">Peter Norman</p>
+                                <p class="cards__profession">Programmer</p>
+                                <button class="cards__button button button--started">
+                                    <span class="button--startedtext">Register</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cards__box box box--reviewbox">
+                            <div class="cards__content">
+                                <img src="img/reviews/Ellipse_10.png" alt="photo" class="cards__image">
+                                <p class="cards__text">When I write a book, i register a copyright</p>
+                                <p class="cards__name">Helen Green</p>
+                                <p class="cards__profession">Writer</p>
+                                <button class="cards__button button button--started">
+                                    <span class="button--startedtext">Register</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cards__box box box--reviewbox">
+                            <div class="cards__content">
+                                <img src="img/reviews/Ellipse_16.png" alt="photo" class="cards__image">
+                                <p class="cards__text">The unlimited plan of copyright.co.uk allow me to protect all my photos</p>
+                                <p class="cards__name">Albert Scott</p>
+                                <p class="cards__profession">Photograph</p>
+                                <button class="cards__button button button--started">
+                                    <span class="button--startedtext">Register</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__slider slider">
+                        <label class="slider__item">
+                            <input name="1" type="radio" class="slider__btn" checked>
+                            <span class="slider__fake fake"></span>
+                        </label>
+
+                        <label class="slider__item">
+                            <input name="1" type="radio" class="slider__btn">
+                            <span class="slider__fake fake"></span>
+                        </label>
+
+                        <label class="slider__item">
+                            <input name="1" type="radio" class="slider__btn">
+                            <span class="slider__fake fake"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="mail">
+                <h2 class="mail__title">Get in touch with us</h2>
+                <p class="mail__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</p>
+                <div class="mail__subscribe subscribe">
+                    <form action="#" method="POST" enctype="multipart/form-data" class="subscribe__email email">
+                        <img src="img/Subscribe/Union.svg" alt="email" class="email__image">
+                        <label><input type="email" placeholder="Enter your email" maxlength="30" class="email__input"></label>
+                    </form>
+                    <button class="subscribe__button button button--email">
+                        <span class="button--emailtext">Subscribe</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-top__follow follow">
+                        <img src="img/footer/footerlogo.svg" alt="logo" class="follow__logo">
+                        <div class="follow__messengers">
+                            <span>Follow Us</span>
+                            <a href="#"><img src="img/footer/Facebook_40_Icon_Web.svg" alt="fasebook"></a>
+                            <a href="#"><img src="img/footer/Twitter_40_Icon_Web.svg" alt="twitter"></a>
+                        </div>
+                    </div>
+                    <nav class="footer-top__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Offers</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Registration UK</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Features</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Copyright legal</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Legal</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-bottom">
+                    <span class="footer-bottom__text">© Copyright 2001-2020 Copyright .co.uk - All rights reserved - Legal</span>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

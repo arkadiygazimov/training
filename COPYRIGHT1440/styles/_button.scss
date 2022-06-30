@@ -1,5 +1,5 @@
 .button {
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     
     &--login {
@@ -18,7 +18,7 @@
     }
 
     &--started {
-        width: 316px;
+        width: 85%;
         height: 48px;
         background-color: transparent;
         border: 1px solid $color-border-fourth;
@@ -29,6 +29,21 @@
         height: 48px;
         background-color: $bg-color-secondary;
         border: 1px solid $color-border-third;
+    }
+
+    &--email {
+        width: 140px;
+        height: 40px;
+        background-color: $color-border-fourth;
+        border: none;
+    }
+
+    
+    &--start {
+        width: 176px;
+        height: 48px;
+        background-color: $bg-color-fifth;
+        border: none;
     }
 
     &--logintext {
@@ -51,5 +66,16 @@
 
     &--viewtext {
         font-weight: 600;
+    }
+
+    &--emailtext {
+        font-weight: 600;
+        color: $font-color-third;
+    }
+
+    &--starttext {
+        font-size: 18px;
+        font-weight: 600;
+        color: $font-color-third;
     }
 }

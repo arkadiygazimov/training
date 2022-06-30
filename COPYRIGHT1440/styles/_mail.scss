@@ -1,0 +1,26 @@
+.mail {
+    background-color: $bg-color-secondary;
+    background-image: url(../img/mailbg.svg);
+    background-repeat: no-repeat;
+    background-position: 78px 88px;
+    text-align: center;
+
+    &__title {
+        padding-top: 80px;
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 28px;
+        color: $font-color-secondary;
+    }
+
+    &__subscribe {
+        margin-top: 48px;
+        padding-bottom: 210px;
+    }
+}

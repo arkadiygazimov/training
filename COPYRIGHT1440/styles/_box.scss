@@ -5,7 +5,7 @@
 
     &--pricebox {
         width: 364px;
-        height: 357.09px;
+        height: 357px;
     }
 
     &--priceyellow {
@@ -27,5 +27,33 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+    }
+
+    &--ourblog {
+        width: 365px;
+        height: 377px;
+    }
+
+    &--howdo {
+        background-image: url(../img/blog/HowDo.png);
+        background-repeat: no-repeat;
+        background-size: 100% 227px;
+    }
+
+    &--whattype {
+        background-image: url(../img/blog/whatType.png);
+        background-repeat: no-repeat;
+        background-size: 100% 227px;
+    }
+
+    &--whatis {
+        background-image: url(../img/blog/whatis.png);
+        background-repeat: no-repeat;
+        background-size: 100% 227px;
+    }
+
+    &--reviewbox {
+        width: 364px;
+        height: 264px;
     }
 }

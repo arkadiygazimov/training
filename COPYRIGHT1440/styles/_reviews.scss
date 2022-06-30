@@ -1,0 +1,64 @@
+.reviews {
+    background-image: url(../img/reviewbg.svg);
+    background-repeat: no-repeat;
+    background-position: 35px 74px;
+
+    &__cards {
+        width: $container-width;
+        max-width: $container-width-max;
+        margin: 0 auto;
+        padding-top: 179px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        margin: 50px auto 0;
+        padding-bottom: 150px;
+    }
+}
+
+.cards {
+
+    &__box {
+        position: relative;
+        margin: 5px;
+    }
+
+    &__content {
+        padding: 0 24px;
+    }
+
+    &__image {
+        position: absolute;
+        left: 24px;
+        top: -34px;
+    }
+
+    &__text {
+        margin-top: 52px;
+        line-height: 24px;
+        color: $font-color-secondary;
+    }
+
+    &__name {
+        position: absolute;
+        top: 124px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__profession {
+        position: absolute;
+        top: 148px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $font-color-secondary;
+    }
+
+    &__button {
+        position: absolute;
+        top: 200px;
+    }
+}

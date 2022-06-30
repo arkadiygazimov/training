@@ -1,0 +1,50 @@
+.header-bottom-container {
+    padding: 88px 0;
+}
+
+.header-bottom {
+    width: $container-width;
+    max-width: $container-width-max;
+    height: 340px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__registration {
+        width: 411px;
+        height: 308px;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 613px;
+        height: 340px;
+    }
+}
+
+.registration {
+    
+    &__contant {
+        height: 212px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+
+        &--submain {
+        margin-bottom: 8px;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        color: $font-color-secondary;
+        line-height: 24px;
+    }
+}

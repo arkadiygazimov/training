@@ -1,4 +1,14 @@
 .header {
+
+    &--background {
+        background-image: url(../img/patterns.svg);
+        background-size: 99% 100%;
+        background-position: 15px -10px;
+        background-repeat: no-repeat;
+    }
+}
+
+.header-top {
     margin: 0 auto;
     width: $container-width;
     max-width: $container-width-max;
@@ -9,7 +19,7 @@
     font-size: 14px;
 
     &__logo {
-        width: 283.16px;
+        width: 283px;
         height: 63px;
     }
 
@@ -51,9 +61,10 @@
 }
 
 .phone {
+    margin-right: 5px;
     background-color: $bg-color-secondary;
     border: 2px solid $color-border-main;
-    border-radius: 0.5em;
+    border-radius: 8px;
     display: flex;
     align-items: center;
 
@@ -67,11 +78,13 @@
 
     &__vl {
         height: 25px;
+        margin-left: 5px;
         border-left: 2px solid $color-border-main;
         border-radius: 2px;
     }
 
     &__link {
+        margin-left: 5px;
         padding-right: 0.5em;
         color: $font-color-main;
         text-decoration: none; 
