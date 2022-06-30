@@ -8,11 +8,20 @@
     }
 }
 
+.header-top-container {
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    background-color: $bg-color;
+    z-index: 9999;
+}
+
 .header-top {
     margin: 0 auto;
     width: $container-width;
     max-width: $container-width-max;
-    height: 88px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
