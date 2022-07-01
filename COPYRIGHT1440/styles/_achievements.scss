@@ -1,8 +1,8 @@
-.achievements-container {
+.achievements {
     background-color: $bg-color-secondary;
     text-align: center;
 
-    &__achievements {
+    &__numbers {
         padding-top: 104px;
     }
 
@@ -19,15 +19,41 @@
     &__slider {
         margin: 50px auto 0;
         padding-bottom: 150px;
+
+        &--mobile {
+            @media screen and (max-width:768px) {
+                margin: 25px auto 0;
+                padding-bottom: 110px;
+            }
+        }
     }
 }
 
-.achievements {
+.numbers {
     width: 80%;
     max-width: 950px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+
+    &--tablet {
+        @media screen and (max-width:992px) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            width: 100%;
+        }
+    }
+
+    &--mobile {
+        @media screen and (max-width:768px) {
+            padding-top: 64px;
+        }
+    }
+
+    &__item {
+        margin-top: 35px;
+    }
 
     &__elipse {
         margin: 0 auto;
@@ -46,5 +72,73 @@
 
     &__text {
         margin-top: 16px;
+    }
+}
+
+.companies {
+
+    &__image1 {
+        background-image: url(../img/companies/enser1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 120px;
+        height: 72px;
+        margin-right: 20px;
+
+        &--mobile {
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__image2 {
+        background-image: url(../img/companies/cansor2.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 116px;
+        height: 72px;
+        margin-right: 20px;
+    }
+
+    &__image3 {
+        background-image: url(../img/companies/odoo3.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 192px;
+        height: 72px;
+        margin-right: 20px;
+    }
+
+    &__image4 {
+        background-image: url(../img/companies/peptone4.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 289px;
+        height: 72px;
+        margin-right: 20px;
+    }
+
+    &__image5 {
+        background-image: url(../img/companies/ebay5.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 158px;
+        height: 72px;
+        margin-right: 20px;
+    }
+
+    &__image6 {
+        background-image: url(../img/companies/dropbox6.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 150px;
+        height: 72px;
+
+        &--mobile {
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
     }
 }

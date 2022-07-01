@@ -1,4 +1,4 @@
-.footer-container {
+.footer {
     background-color: $bg-color-footer;
     background-image: url(../img/mailbg.svg);
     background-repeat: no-repeat;
@@ -12,21 +12,58 @@
     padding: 50px 0 130px;
     display: flex;
     justify-content: space-between;
+
+    &--mobile {
+        @media screen and (max-width:800px) {
+            flex-direction: column;
+        }
+    }
 }
 
 .follow {
 
+    &--mobile {
+        @media screen and (max-width:800px) {
+            display: flex;
+            width: 100%;
+            margin-left: -15px;
+        }
+    }
+
+    &__logo {
+
+        &--mobile {
+            @media screen and (max-width:800px) {
+                transform: scale(0.8);
+            }
+        }
+
+        &--mobile {
+            @media screen and (max-width:800px) {
+                transform: scale(0.7);
+            }
+        }
+    }
+
     &__messengers {
-        width: 200px;
-        margin: 25px 0 0 8px;
+        width: 100%;
+        margin: 25px 10px 0 8px;
         color: $font-color-footer;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &--mobile {
+            @media screen and (max-width:800px) {
+                margin: 0 0 0 -10px;
+            }
+        }
     }
 
     &__icon {
         transition: 0.5s;
+        margin-right: 5px;
+        margin-left: 5px;
         
         &:hover {
             transform: scale(1.1);
@@ -36,6 +73,7 @@
 }
 
 .menu {
+    margin-left: 5px;
 
     &__list {
         margin: 0 40px 0 5px;
@@ -44,6 +82,20 @@
         grid-column-gap: 140px;
         grid-row-gap: 24px;
         list-style: none;
+
+        &--mobile {
+            @media screen and (max-width:800px) {
+                margin-top: 60px;
+                grid-column-gap: 60px;
+            }
+        }
+
+        &--mobile {
+            @media screen and (max-width:800px) {
+                margin-top: 60px;
+                grid-column-gap: 30px;
+            }
+        }
     }
 
     &__link {

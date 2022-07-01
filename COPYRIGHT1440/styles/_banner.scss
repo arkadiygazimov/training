@@ -1,4 +1,4 @@
-.baner {
+.banner {
     background-color: $bg-color-fourth;
     background-image: url(../img/banerbg.svg);
     background-repeat: no-repeat;
@@ -9,12 +9,30 @@
         padding-top: 27px;
         font-size: 50px;
         font-weight: 700;
+
+        &--smallerdesk {
+            @media screen and (max-width:1080px) {
+                font-size: 42px;
+            }
+        }
+
+        &--mobile {
+            @media screen and (max-width:768px) {
+                font-size: 36px;
+            }
+        }
     }
 
     &__text {
         margin-top: 16px;
         font-size: 18px;
         color: $font-color-secondary;
+
+        &--mobile {
+            @media screen and (max-width:768px) {
+                font-size: 20px;
+            }
+        }
     }
 
     &__subscribe {

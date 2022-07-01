@@ -56,4 +56,10 @@
         width: 364px;
         height: 264px;
     }
+
+    &--smallerdesk {
+        @media screen and (max-width:1200px) {
+            display: none;
+        }
+    }
 }

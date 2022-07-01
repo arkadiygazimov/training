@@ -1,13 +1,15 @@
 .reviews {
-    background-image: url(../img/reviewbg.svg);
-    background-repeat: no-repeat;
-    background-position: 35px 74px;
+    &__container {
+        background-image: url(../img/reviewbg.svg);
+        background-repeat: no-repeat;
+        background-position: 35px 74px;
+    }
 
     &__cards {
         width: $container-width;
         max-width: $container-width-max;
         margin: 0 auto;
-        padding-top: 179px;
+        padding-top: 129px;
         display: flex;
         justify-content: space-between;
     }
@@ -15,6 +17,12 @@
     &__slider {
         margin: 50px auto 0;
         padding-bottom: 150px;
+
+        &--mobile {
+            @media screen and (max-width:768px) {
+                padding-bottom: 110px;
+            }
+        }
     }
 }
 
@@ -22,26 +30,52 @@
 
     &__box {
         position: relative;
-        margin: 5px;
+        margin: 50px 5px 0;
+
+        &--mobile {
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
     }
 
-    &__content {
+    &--smallerdesk {
+        @media screen and (max-width:1200px) {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &--tablet {
+        @media screen and (max-width:992px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+.box {
+
+    &__cards-content {
         padding: 0 24px;
     }
 
-    &__image {
+    &__cards-image {
         position: absolute;
         left: 24px;
         top: -34px;
     }
 
-    &__text {
+    &__cards-text {
         margin-top: 52px;
         line-height: 24px;
         color: $font-color-secondary;
     }
 
-    &__name {
+    &__cards-name {
         position: absolute;
         top: 124px;
         font-size: 14px;
@@ -49,7 +83,7 @@
         line-height: 20px;
     }
 
-    &__profession {
+    &__cards-profession {
         position: absolute;
         top: 148px;
         font-size: 14px;
@@ -57,7 +91,7 @@
         color: $font-color-secondary;
     }
 
-    &__button {
+    &__cards-button {
         position: absolute;
         top: 200px;
     }

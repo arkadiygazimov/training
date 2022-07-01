@@ -8,9 +8,9 @@
     font-family: $font-family-main;
     background-color: $bg-color;
     color: $font-color-main;
+    min-width: 375px;
 }
 
 .wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 100%;
 }

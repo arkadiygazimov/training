@@ -1,42 +1,47 @@
-.instruction-container {
+.instruction {
     background-image: url(../img/howitworks_bg.svg);
     background-repeat: no-repeat;
     background-size: 97% 100%;
-    height: 462px;
     margin-top: 94px;
     display: flex;
     justify-content: center;
-}
 
-.instruction {
-    padding-top: 56px;
-    width: $container-width;
-    max-width: $container-width-max;
-    height: 78%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    &__container {
+        padding-top: 56px;
+        width: $container-width;
+        max-width: $container-width-max;
+        height: 78%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
+        &--mobile {
+            @media screen and (max-width:768px) {
+                width: 100%;
+                padding-top: 30px;
+            }
+        }
+    }
+    
     &__title {
         margin-left: 20px;
     }
 
     &__content {
-        width: 100%;
-        height: 212px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 98%;
+        margin-top: 25px;
     }
 }
 
 .icn {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 35px;
 
     &__elipse {
         width: 88px;
@@ -60,23 +65,5 @@
     &__text {
         color: $font-color-secondary;
         text-align: center;
-    }
-
-    &--fill {
-        width: 180px;
-    }
-
-    &--upload {
-        width: 230px;
-        margin-left: 30px;
-    }
-
-    &--register {
-        width: 205px;
-        margin-left: 30px;
-    }
-
-    &--life {
-        width: 240px;
     }
 }
