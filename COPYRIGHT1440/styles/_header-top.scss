@@ -67,7 +67,7 @@
 
     &--mobile {
         @media screen and (max-width:1130px) {
-            opacity: 0;
+            visibility: hidden;
             position: absolute;
             top: 80px;
             right: 0;
@@ -207,8 +207,7 @@
 
         &--mobile:checked ~ .nav--mobile {
             @media screen and (max-width:1130px) {
-                opacity: 1;
-                transition: 0.5s;
+                visibility: visible;
             }
         }
     }
