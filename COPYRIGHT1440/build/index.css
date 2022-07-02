@@ -26,7 +26,7 @@
   background-color: #f8fafc;
   border: 2px solid #fcc540;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 992px) {
   .button--login--mobile {
     display: none;
   }
@@ -36,7 +36,7 @@
   border: none;
   background-color: transparent;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 992px) {
   .button--minilogin--mobile {
     display: block;
   }
@@ -332,9 +332,14 @@
   margin: 0 5px;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (min-width: 1130px) {
+  .nav--desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 1130px) {
   .nav--mobile {
-    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 80px;
     right: 0;
@@ -351,12 +356,12 @@
   justify-content: space-between;
   list-style-type: none;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .nav__list--mobile {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .nav__item--mobile {
     margin: 30px;
     text-align: end;
@@ -366,7 +371,7 @@
   color: #0B1940;
   text-decoration: none;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .nav__link--mobile {
     font-size: 18px;
     font-weight: 600;
@@ -385,7 +390,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .fake-burger--mobile {
     display: inline-block;
     width: 30px;
@@ -433,22 +438,28 @@
 .func__burger {
   display: none;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .func__burger--mobile:checked + .fake-burger {
     transform: rotate(-45deg);
     transition: 0.5s;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .func__burger--mobile:checked + .fake-burger::before {
     transform: rotate(90deg);
     top: 0;
     transition: 0.5s;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .func__burger--mobile:checked + .fake-burger::after {
     transform: scale(0);
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .func__burger--mobile:checked ~ .nav--mobile {
+    opacity: 1;
     transition: 0.5s;
   }
 }
@@ -461,7 +472,7 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   .phone--mobile {
     margin-right: 30px;
   }

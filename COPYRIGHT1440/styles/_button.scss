@@ -9,7 +9,7 @@
         border: 2px solid $color-border-secondary;
 
         &--mobile {
-            @media screen and (max-width:1050px) {
+            @media screen and (max-width:992px) {
                 display: none;
             }
         }
@@ -21,7 +21,7 @@
         background-color: transparent;
 
         &--mobile {
-            @media screen and (max-width:1050px) {
+            @media screen and (max-width:992px) {
                 display: block;
             }
         }
