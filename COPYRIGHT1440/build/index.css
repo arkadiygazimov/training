@@ -248,7 +248,7 @@
   }
 }
 .subscribe__email {
-  width: 386x;
+  width: 386px;
   height: 40px;
   background-color: #fff;
   box-shadow: 0px 4px 10px #C3E0FA;
@@ -322,6 +322,7 @@
 }
 @media screen and (max-width: 648px) {
   .header-top__minilogo--mobile {
+    margin-left: -10px;
     display: block;
     transform: scale(0.6);
   }
@@ -333,7 +334,7 @@
 
 @media screen and (max-width: 1050px) {
   .nav--mobile {
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
     top: 80px;
     right: 0;
@@ -423,7 +424,7 @@
 .func {
   display: flex;
   align-items: center;
-  margin-left: -15px;
+  margin-left: -20px;
 }
 .func__phone {
   width: 190px;
@@ -463,6 +464,11 @@
 @media screen and (max-width: 1050px) {
   .phone--mobile {
     margin-right: 30px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .phone--minimobile {
+    margin-right: 10px;
   }
 }
 .phone__contant {
@@ -519,10 +525,10 @@
   .header-bottom__img--mobile {
     display: block;
     transform: scale(0.97);
-    margin: 50px auto 0;
-    width: 450px;
-    height: 215px;
-    background-size: contain;
+    margin: 30px auto 0;
+    width: 95%;
+    height: 27vh;
+    background-size: 100% 100%;
   }
 }
 
@@ -557,7 +563,6 @@
 }
 @media screen and (max-width: 530px) {
   .registration--mobile {
-    margin-left: 10px;
     width: 95%;
     align-items: baseline;
     text-align: start;
@@ -667,7 +672,7 @@
 }
 @media screen and (max-width: 768px) {
   .instruction__container--mobile {
-    width: 100%;
+    width: 95%;
     padding-top: 30px;
   }
 }
@@ -677,7 +682,7 @@
 .instruction__content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  width: 98%;
+  width: 100%;
   margin-top: 25px;
 }
 
@@ -1202,6 +1207,8 @@
 }
 @media screen and (max-width: 768px) {
   .mail__text--mobile {
+    width: 95%;
+    margin: 0 auto;
     font-size: 22px;
   }
 }

@@ -38,7 +38,7 @@
             @media screen and (max-width:1080px) {
                 font-size: 18px;
                 margin-top: 10px;
-                width: 95%;
+                width: $container-width;
             }
         }
 
@@ -73,7 +73,7 @@
         &--mobile {
             @media screen and (max-width:768px) {
                 font-size: 22px;
-                width: 95%;
+                width: $container-width;
             }
         }
     }

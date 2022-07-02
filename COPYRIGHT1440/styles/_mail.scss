@@ -26,6 +26,8 @@
 
         &--mobile {
             @media screen and (max-width:768px) {
+                width: $container-width;
+                margin: 0 auto;
                 font-size: 22px;
             }
         }
