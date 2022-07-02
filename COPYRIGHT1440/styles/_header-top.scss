@@ -216,8 +216,8 @@
     }
 
     &--minimobile {
-        @media screen and (max-width:410px) {
-            margin-right: 10px;
+        @media screen and (max-width:384px) {
+            margin-right: 15px;
         }
     }
 

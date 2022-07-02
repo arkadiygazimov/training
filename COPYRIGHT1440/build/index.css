@@ -466,9 +466,9 @@
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 384px) {
   .phone--minimobile {
-    margin-right: 10px;
+    margin-right: 15px;
   }
 }
 .phone__contant {
@@ -996,7 +996,7 @@
 }
 
 .box__blog-text {
-  margin: 251px 0 0 32px;
+  margin: 251px 10px 0 32px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 700;
