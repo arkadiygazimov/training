@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/lesson-10/10_2/img/background.png);
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-window {
+  width: 50%;
+  height: 60vh;
+  background-color: #111a28;
+  box-shadow: 0 0 2em #000;
+  border-radius: 0.5em;
+}
+.product-window__logo {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding-left: 4.5%;
+}
+.product-window__main-content {
+  margin: 0 auto;
+  width: 83%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content__product-container {
+  width: 65%;
+  margin-top: 10%;
+}
+
+.product-container__poduct-content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 5vw;
+}
+.slider__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.slider__btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: transparent;
+  transition: 0.5s;
+}
+.slider__btn:hover {
+  transition: box-shadow 0.5s;
+  box-shadow: 0 0 5px #fff, inset 0 0 5px #fff;
+  cursor: pointer;
+}
+.slider__btn--blue {
+  background-color: #1200ff;
+}
+.slider__btn--white {
+  background-color: #fff;
+}
+.slider__btn--red {
+  background-color: #ff0000;
+}
+.slider__btn--aqua {
+  background-color: #00ffe4;
+}
+
+.slider--blue {
+  background-color: #1200ff;
+}
+
+.slider--white {
+  background-color: #fff;
+}
+
+.slider--red {
+  background-color: #ff0000;
+}
+
+.slider--aqua {
+  background-color: #00ffe4;
+}
+
+.description {
+  width: 35%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.description__title {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.description__text {
+  color: rgba(255, 255, 255, 0.2);
+}
+.description__select {
+  display: flex;
+}
+
+.select__option {
+  display: flex;
+  padding: 0.5em;
+  background-color: #111a28;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 0.2em;
+}
+
+.golden {
+  color: #f7bf16;
+}
+
+.grey {
+  color: #9fa4ac;
+}
+
+.product-add {
+  background-color: #29303c;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1em;
+  width: 90%;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,102 @@
+.header-container {
+    width: 77%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    height: 132vh;
+    background-image: url(/lesson-10/10_1/img/img-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-top {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__logo {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-style: italic;
+    font-family: var(--font-logo);
+    color: var(--color-font-main);
+}
+
+.header-nav-container {
+    width: 37%;
+}
+
+.header-nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header-nav__item {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-main);
+}
+
+.header-nav__item > a {
+    padding-top: 0.5em;
+    text-decoration: none;
+    color: var(--color-font-main);
+}
+
+.header-nav__item > a:hover {
+    border-top: 3px solid var( --color-main);
+}
+
+.header-nav__item > a:active {
+    color: var(--color-main);
+}
+
+.header-bottom {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 30%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-content__title {
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: var(--font-main);
+}
+
+.header-content__text {
+    font-size: 1.15em;
+    font-family: var( --font-content);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header-button {
+    transition: width 1s;
+    width: 60%;
+    height: 4em;
+    background-color: var(--color-main);
+    box-shadow: 3px 3px 5px var(--font-color-main);
+    border: 0;
+}
+
+.header-button:hover {
+    transition: width 1s;
+    width: 100%;
+    cursor: pointer;
+}
+
+.header-button__text {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: var( --font-main);
+    color: var( --font-color-secondary);
+}
