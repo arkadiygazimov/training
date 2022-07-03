@@ -306,7 +306,6 @@
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
-  position: relative;
 }
 .header-top__logo {
   width: 283px;
@@ -339,16 +338,14 @@
 }
 @media screen and (max-width: 1130px) {
   .nav--mobile {
-    visibility: hidden;
     position: absolute;
     top: 80px;
     right: 0;
-    width: 200px;
-    display: flex;
-    justify-content: flex-end;
+    transform: translateX(105%);
+    transition: transform 0.5s;
+    width: 100%;
+    height: 100vh;
     background-color: #fff;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0px 8px 20px rgba(184, 184, 184, 0.2);
   }
 }
 .nav__list {
@@ -359,6 +356,7 @@
 @media screen and (max-width: 1130px) {
   .nav__list--mobile {
     flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 1130px) {
@@ -459,7 +457,8 @@
 }
 @media screen and (max-width: 1130px) {
   .func__burger--mobile:checked ~ .nav--mobile {
-    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.5s;
   }
 }
 
