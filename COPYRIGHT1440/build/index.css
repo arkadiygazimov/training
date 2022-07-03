@@ -1296,7 +1296,7 @@
   }
 }
 .follow__messengers {
-  width: 100%;
+  width: 200px;
   margin: 25px 10px 0 8px;
   color: #F2F2F2;
   display: flex;
