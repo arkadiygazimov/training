@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: $font-family-main;
+    background-color: $bg-color;
+    color: $font-color-main;
+    min-width: 350px;
+}
+
+.wrapper {
+    width: 100%;
+}

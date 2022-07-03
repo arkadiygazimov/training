@@ -1,0 +1,108 @@
+.footer {
+    background-color: $bg-color-footer;
+    background-image: url(../img/mailbg.svg);
+    background-repeat: no-repeat;
+    background-position: 73px -422px;
+}
+
+.footer-top {
+    width: $container-width;
+    max-width: $container-width-max;
+    margin: 0 auto;
+    padding: 50px 0 130px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:800px) {
+        flex-direction: column;
+    }
+}
+
+.follow {
+
+    @media screen and (max-width:800px) {
+        display: flex;
+        width: 100%;
+        margin-left: -15px;
+    }
+
+    &__logo {
+
+        @media screen and (max-width:800px) {
+            transform: scale(0.8);
+        }
+
+        &--mobile {
+            @media screen and (max-width:415px) {
+                transform: scale(0.7);
+            }
+        }
+    }
+
+    &__messengers {
+        width: 200px;
+        margin: 25px 10px 0 8px;
+        color: $font-color-footer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width:800px) {
+            margin: 0 0 0 -10px;
+        }
+    }
+
+    &__icon {
+        transition: 0.5s;
+        margin-right: 5px;
+        margin-left: 5px;
+        
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+}
+
+.menu {
+    margin-left: 5px;
+
+    &__list {
+        margin: 0 40px 0 5px;
+        display: grid;
+        grid-template-columns: 120px 60px 90px;
+        grid-column-gap: 140px;
+        grid-row-gap: 24px;
+        list-style: none;
+
+        @media screen and (max-width:800px) {
+            margin-top: 60px;
+            grid-column-gap: 60px;
+        }
+
+        &--mobile {
+            @media screen and (max-width:415px) {
+                margin-top: 60px;
+                grid-column-gap: 30px;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        line-height: 22px;
+        color: $font-color-footer;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    opacity: 0.8;
+
+    &__text {
+        font-size: 12px;
+        line-height: 16px;
+        color: $font-color-third;
+    }
+}

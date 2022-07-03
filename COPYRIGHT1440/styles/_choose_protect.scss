@@ -1,0 +1,77 @@
+.choose {
+    margin-top: 150px;
+    background-image: url(../img/choose_Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 1379px 0;
+
+    &__container {
+        margin: 0 auto;
+        text-align: center;
+        width: $container-width;
+        max-width: $container-width-max;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 98%;
+        margin-top: 25px;
+
+        @media screen and (max-width:410px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__title {
+
+        &--subsecondary {
+            font-size: 20px;
+            color: $font-color-fifth;
+            margin: 10px 0;
+        }
+    }
+
+    &__box {
+        margin: 25px 5px;
+
+        &--hidden {
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            margin: 8px auto;
+        }
+    }
+
+    &__button {
+        margin: 25px 0 150px;
+
+        @media screen and (max-width:768px) {
+            margin: 25px 0 110px;
+        }
+    }
+}
+
+.box {
+
+    &__choose-icon {
+        width: 60px;
+        height: 51px;
+    }
+
+    &__choose-text {
+        margin-top: -60px;
+        font-weight: 600;
+    }
+}
