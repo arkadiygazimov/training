@@ -4,12 +4,10 @@
     display: flex;
     justify-content: space-between;
 
-    &--mobile {
-        @media screen and (max-width:588px) {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-        }
+    @media screen and (max-width:588px) {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
     }
 
     &__email {
@@ -19,20 +17,16 @@
         box-shadow: 0px 4px 10px #C3E0FA;
         border-radius: 6px;
 
-        &--mobile {
-            @media screen and (max-width:588px) {
-                width: 100%;
-            }
+        @media screen and (max-width:588px) {
+            width: 100%;
         }
     }
 
     &__button {
 
-        &--mobile {
-            @media screen and (max-width:588px) {
-                margin-top: 25px;
-                width: 100%;
-            }
+        @media screen and (max-width:588px) {
+            margin-top: 25px;
+            width: 100%;
         }
     }
 }

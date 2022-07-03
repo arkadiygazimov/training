@@ -13,33 +13,27 @@
     display: flex;
     justify-content: space-between;
 
-    &--mobile {
-        @media screen and (max-width:800px) {
-            flex-direction: column;
-        }
+    @media screen and (max-width:800px) {
+        flex-direction: column;
     }
 }
 
 .follow {
 
-    &--mobile {
-        @media screen and (max-width:800px) {
-            display: flex;
-            width: 100%;
-            margin-left: -15px;
-        }
+    @media screen and (max-width:800px) {
+        display: flex;
+        width: 100%;
+        margin-left: -15px;
     }
 
     &__logo {
 
-        &--mobile {
-            @media screen and (max-width:800px) {
-                transform: scale(0.8);
-            }
+        @media screen and (max-width:800px) {
+            transform: scale(0.8);
         }
 
         &--mobile {
-            @media screen and (max-width:800px) {
+            @media screen and (max-width:415px) {
                 transform: scale(0.7);
             }
         }
@@ -53,10 +47,8 @@
         justify-content: space-between;
         align-items: center;
 
-        &--mobile {
-            @media screen and (max-width:800px) {
-                margin: 0 0 0 -10px;
-            }
+        @media screen and (max-width:800px) {
+            margin: 0 0 0 -10px;
         }
     }
 
@@ -83,15 +75,13 @@
         grid-row-gap: 24px;
         list-style: none;
 
-        &--mobile {
-            @media screen and (max-width:800px) {
-                margin-top: 60px;
-                grid-column-gap: 60px;
-            }
+        @media screen and (max-width:800px) {
+            margin-top: 60px;
+            grid-column-gap: 60px;
         }
 
         &--mobile {
-            @media screen and (max-width:800px) {
+            @media screen and (max-width:415px) {
                 margin-top: 60px;
                 grid-column-gap: 30px;
             }

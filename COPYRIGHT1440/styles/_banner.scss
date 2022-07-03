@@ -10,16 +10,12 @@
         font-size: 50px;
         font-weight: 700;
 
-        &--smallerdesk {
-            @media screen and (max-width:1080px) {
-                font-size: 42px;
-            }
+        @media screen and (max-width:1080px) {
+            font-size: 42px;
         }
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                font-size: 36px;
-            }
+        @media screen and (max-width:768px) {
+            font-size: 36px;
         }
     }
 
@@ -28,10 +24,8 @@
         font-size: 18px;
         color: $font-color-secondary;
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                font-size: 20px;
-            }
+        @media screen and (max-width:768px) {
+            font-size: 20px;
         }
     }
 

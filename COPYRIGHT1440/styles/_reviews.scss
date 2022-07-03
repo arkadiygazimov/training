@@ -18,10 +18,8 @@
         margin: 50px auto 0;
         padding-bottom: 150px;
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                padding-bottom: 110px;
-            }
+        @media screen and (max-width:768px) {
+            padding-bottom: 110px;
         }
     }
 }
@@ -32,6 +30,12 @@
         position: relative;
         margin: 50px 5px 0;
 
+        &--smallerdesk {
+            @media screen and (max-width:1200px) {
+                display: none;
+            }
+        }
+
         &--mobile {
             @media screen and (max-width:768px) {
                 display: none;
@@ -39,21 +43,17 @@
         }
     }
 
-    &--smallerdesk {
-        @media screen and (max-width:1200px) {
-            width: 90%;
-            display: flex;
-            justify-content: space-around;
-        }
+    @media screen and (max-width:1200px) {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
     }
 
-    &--tablet {
-        @media screen and (max-width:992px) {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+    @media screen and (max-width:992px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 

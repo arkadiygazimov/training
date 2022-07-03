@@ -17,36 +17,36 @@
         display: flex;
         justify-content: space-between;
 
-        &--smallerdesk {
-            @media screen and (max-width:1200px) {
-                width: 90%;
-                display: flex;
-                justify-content: space-around;
-            }
+        @media screen and (max-width:1200px) {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
         }
 
-        &--tablet {
-            @media screen and (max-width:992px) {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-            }
+        @media screen and (max-width:992px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
 
     &__button {
         margin: 43px 0 150px;
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                margin: 43px 0 110px;
-            }
+        @media screen and (max-width:768px) {
+            margin: 43px 0 110px;
         }
     }
 
     &__box {
         margin: 35px 5px 0;
+
+        &--smallerdesk {
+            @media screen and (max-width:1200px) {
+                display: none;
+            }
+        }
 
         &--mobile {
             @media screen and (max-width:768px) {

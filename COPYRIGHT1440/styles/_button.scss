@@ -8,24 +8,22 @@
         background-color: $bg-color;
         border: 2px solid $color-border-secondary;
 
-        &--mobile {
-            @media screen and (max-width:992px) {
-                display: none;
-            }
+        @media screen and (max-width:992px) {
+            display: none;
         }
     }
 
-    &--minilogin {
-        display: none;
+    &--login-mobile {
         border: none;
         background-color: transparent;
 
-        &--mobile {
-            @media screen and (max-width:992px) {
-                display: block;
-            }
+        @media screen and (min-width:992px) {
+            display: none;
         }
 
+        @media screen and (max-width:992px) {
+            display: block;
+        }
     }
 
     &--registration {

@@ -13,19 +13,15 @@
         font-weight: 700;
         line-height: 68px;
 
-        &--smallerdesk {
-            @media screen and (max-width:1080px) {
-                font-size: 36px;
-                padding-top: 60px;
-            }
+        @media screen and (max-width:1080px) {
+            font-size: 36px;
+            padding-top: 60px;
         }
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                padding-top: 114px;
-                font-size: 34px;
-                line-height: 46px;
-            }
+        @media screen and (max-width:768px) {
+            padding-top: 114px;
+            font-size: 34px;
+            line-height: 46px;
         }
     }
 
@@ -34,12 +30,10 @@
         font-size: 28px;
         line-height: 42px;
 
-        &--smallerdesk {
-            @media screen and (max-width:1080px) {
-                font-size: 18px;
-                margin-top: 10px;
-                width: $container-width;
-            }
+        @media screen and (max-width:1080px) {
+            font-size: 18px;
+            margin-top: 10px;
+            width: $container-width;
         }
 
         &::before {
@@ -63,29 +57,23 @@
         font-weight: 600;
         line-height: 42px;
 
-        &--smallerdesk {
-            @media screen and (max-width:1080px) {
-                font-size: 24px;
-                margin-top: 30px;
-            }
+        @media screen and (max-width:1080px) {
+            font-size: 24px;
+            margin-top: 30px;
         }
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                font-size: 22px;
-                width: $container-width;
-            }
+        @media screen and (max-width:768px) {
+            font-size: 22px;
+            width: $container-width;
         }
     }
 
     &__button {
         margin: 32px 0 96px;
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                width: 200px;
-                height: 55px;
-            }
+        @media screen and (max-width:768px) {
+            width: 200px;
+            height: 55px;
         }
     }
 }

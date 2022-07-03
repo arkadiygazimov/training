@@ -31,25 +31,27 @@
         margin: 35px 5px 0;
     }
 
-    &--smallerdesk {
-        @media screen and (max-width:1200px) {
-            width: 90%;
-            display: flex;
-            justify-content: space-around;
-        }
+    @media screen and (max-width:1200px) {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
     }
 
-    &--tablet {
-        @media screen and (max-width:992px) {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+    @media screen and (max-width:992px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
 .box {
+    
+    &--smallerdesk {
+        @media screen and (max-width:1200px) {
+            display: none;
+        }
+    }
 
     &__plan-content {
         margin-top: 85px;

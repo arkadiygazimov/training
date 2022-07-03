@@ -1,10 +1,8 @@
 .header-bottom {
     padding: 168px 0 88px;
 
-    &--mobile {
-        @media screen and (max-width:768px) {
-            padding: 134px 0 54px;
-        }
+    @media screen and (max-width:768px) {
+        padding: 134px 0 54px;
     }
 
     &__container {
@@ -14,29 +12,27 @@
         display: flex;
         justify-content: space-between;
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                flex-direction: column;
-                width: 100%;
-            }
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            width: 100%;
         }
     }
 
     &__img {
         background-image: url(../img/Group.svg);
         background-repeat: no-repeat;
-        width: 613px;
+        background-size: 100%;
+        width: calc(100% - 420px);
+        max-width: 613px;
         height: 340px;
         
-        &--mobile {
-            @media screen and (max-width:768px) {
-                display: block;
-                transform: scale(0.97);
-                margin: 30px auto 0;
-                width: $container-width;
-                height: 27vh;
-                background-size: 100% 100%;
-            }
+        @media screen and (max-width:768px) {
+            display: block;
+            transform: scale(0.97);
+            margin: 30px auto 0;
+            width: $container-width;
+            height: 27vh;
+            background-size: 100% 100%;
         }
     }
 }
@@ -46,16 +42,21 @@
 
     &__title {
 
-        &--submain {
-        margin-top: 16px;
-
+        @media screen and (max-width:768px) {
+            font-size: 38px;
+            margin: 0 5px 0;
         }
+    }
 
-        &--mobile {
-            @media screen and (max-width:768px) {
-                font-size: 38px;
-                margin: 0 5px 0;
-            }
+    &__small-title {
+        margin-top: 16px;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+
+        @media screen and (max-width:768px) {
+            font-size: 24px;
+            line-height: 24px;
         }
     }
 
@@ -70,20 +71,16 @@
         margin-top: 48px;
     }
 
-    &--smallerdesk {
         @media screen and (max-width:768px) {
             margin: 0 auto;
             width: 80%;
             align-items: center;
             text-align: center;
         }
-    }
 
-    &--mobile {
-        @media screen and (max-width:530px) {
-            width: $container-width;
-            align-items: baseline;
-            text-align: start;
-        }
+    @media screen and (max-width:530px) {
+        width: $container-width;
+        align-items: baseline;
+        text-align: start;
     }
 }

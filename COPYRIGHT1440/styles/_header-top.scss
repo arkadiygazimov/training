@@ -31,73 +31,63 @@
         width: 283px;
         height: 63px;
 
+        @media screen and (max-width:648px) {
+            display: none;
+        }
+
         &--mobile {
-            @media screen and (max-width:648px) {
+            margin-left: -10px;
+            display: block;
+            transform: scale(0.6);
+
+            @media screen and (min-width:648px) {
                 display: none;
             }
         }
     }
 
-    &__minilogo {
-        display: none;
-
-        &--mobile {
-            @media screen and (max-width:648px) {
-                margin-left: -10px;
-                display: block;
-                transform: scale(0.6);
-            }
-        }
-    }
-
     &__nav {
-        width: 460px;
+        width: 480px;
         margin: 0 5px;
     }
 }
 
 .nav {
 
-    &--desktop {
+    &--mobile {
         @media screen and (min-width:1130px) {
             display: none;
         }
     }
 
-    &--mobile {
         @media screen and (max-width:1130px) {
+            visibility: hidden;
             position: absolute;
             top: 80px;
             right: 0;
             transform: translateX(105%);
-            transition: transform 0.5s;
-            width: 60%;
+            width: 70%;
             height: 100vh;
             background-color: $bg-color-secondary;
             box-shadow: 0px 8px 20px rgba(184, 184, 184, 0.2);
         }
-    }
 
     &__list {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
 
-        &--mobile {
-            @media screen and (max-width:1130px) {
-                flex-direction: column;
-                align-items: center;
-            }
+        @media screen and (max-width:1130px) {
+            flex-direction: column;
+            align-items: center;
         }
     }
 
     &__item {
 
-        &--mobile {
-            @media screen and (max-width:1130px) {
-                margin: 30px;
-                text-align: end;
-            }
+        @media screen and (max-width:1130px) {
+            margin: 30px;
+            text-align: end;
         }
     }
 
@@ -105,19 +95,15 @@
         color: $font-color-main;
         text-decoration: none;
 
-        &--mobile {
-            @media screen and (max-width:1130px) {
-                font-size: 18px;
-                font-weight: 600;
-            }
+        @media screen and (max-width:1130px) {
+            font-size: 18px;
+            font-weight: 600;
         }
 
         &:hover {
             color: $font-color-hover;
         }
-    }
 
-    &--smallerdesk {
         @media screen and (max-width:1200px) {
             margin: 0 20px;
         }
@@ -130,41 +116,39 @@
 
 .fake-burger {
 
-    &--mobile {
-        @media screen and (max-width:1130px) {
-            display: inline-block;
-            width: 30px;
+    @media screen and (max-width:1130px) {
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background-color: #0576b8;
+        margin: 0 5px 0 30px;
+        position: relative;
+        opacity: 1;
+        transition: 0.5s;
+        margin-bottom: 4px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
             height: 2px;
             background-color: #0576b8;
-            margin: 0 5px 0 30px;
-            position: relative;
             opacity: 1;
+            top: 10px;
             transition: 0.5s;
-            margin-bottom: 4px;
+        }
 
-            &::before {
-                content: "";
-                position: absolute;
-                display: block;
-                width: 100%;
-                height: 2px;
-                background-color: #0576b8;
-                opacity: 1;
-                top: 10px;
-                transition: 0.5s;
-            }
-
-            &::after {
-                content: "";
-                position: absolute;
-                display: block;
-                width: 100%;
-                height: 2px;
-                background-color: #0576b8;
-                opacity: 1;
-                bottom: 10px;
-                transition: 0.5s;
-            }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #0576b8;
+            opacity: 1;
+            bottom: 10px;
+            transition: 0.5s;
         }
     }
 }
@@ -182,14 +166,14 @@
     &__burger {
         display: none;
 
-        &--mobile:checked + .fake-burger {
+        &:checked + .fake-burger {
             @media screen and (max-width:1130px) {
                 transform: rotate(-45deg);
                 transition: 0.5s;
             }
         }
 
-        &--mobile:checked + .fake-burger::before {
+        &:checked + .fake-burger::before {
             @media screen and (max-width:1130px) {
                 transform: rotate(90deg);
                 top: 0;
@@ -197,15 +181,16 @@
             }
         }
 
-        &--mobile:checked + .fake-burger::after {
+        &:checked + .fake-burger::after {
             @media screen and (max-width:1130px) {
                 transform: scale(0);
                 transition: 0.5s;
             }
         }
 
-        &--mobile:checked ~ .nav--mobile {
+        &:checked ~ .nav--mobile {
             @media screen and (max-width:1130px) {
+                visibility: visible;
                 transform: translateX(0);
                 transition: transform 0.5s;
             }
@@ -221,16 +206,12 @@
     display: flex;
     align-items: center;
 
-    &--mobile {
-        @media screen and (max-width:1130px) {
-            margin-right: 30px;
-        }
+    @media screen and (max-width:1130px) {
+        margin-right: 30px;
     }
 
-    &--minimobile {
-        @media screen and (max-width:384px) {
-            margin-right: 15px;
-        }
+    @media screen and (max-width:384px) {
+        margin-right: 15px;
     }
 
     &__contant {
