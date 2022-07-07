@@ -6,6 +6,16 @@
     &--pricebox {
         width: 364px;
         height: 357px;
+
+        @media screen and (max-width:790px) {
+            @include adaptiv-width-box(364, 300);
+            @include adaptiv-height-box(357, 300);
+        }
+
+        @media screen and (max-width:590px) {
+            width: 364px;
+            height: 357px;
+        }
     }
 
     &--priceyellow {
@@ -27,11 +37,29 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+
+        @media screen and (max-width:410px) {
+            @include adaptiv-width-smallbox(189, 145);
+            @include adaptiv-height-smallbox(186, 145);
+        }
+
+        @media screen and (max-width:315px) {
+            width: 189px;
+            height: 186px;
+        }
     }
 
     &--ourblog {
         width: 365px;
         height: 377px;
+
+        @media screen and (max-width:790px) {
+            @include adaptiv-width-box(365, 300);
+        }
+
+        @media screen and (max-width:590px) {
+            width: 365px;
+        }
     }
 
     &--howdo {
@@ -55,5 +83,13 @@
     &--reviewbox {
         width: 364px;
         height: 264px;
+
+        @media screen and (max-width:790px) {
+            @include adaptiv-width-box(364, 300);
+        }
+
+        @media screen and (max-width:590px) {
+            width: 364px;
+        }
     }
 }

@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/lesson-10/10_2/img/background.png);
+    background-size: cover;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-window {
+    width: 50%;
+    height: 60vh;
+    background-color: $primary-background;
+    box-shadow: 0 0 2em #000;
+    border-radius: 0.5em;
+
+    &__logo {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        padding-left: 4.5%;
+    }
+    &__main-content {
+        margin: 0 auto;
+        width: 83%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.main-content {
+
+    &__product-container {
+        width: 65%;
+        margin-top: 10%;
+    }
+}
+.product-container {
+
+    &__poduct-content {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.slider {
+    margin: 0 auto;
+    width: 5vw;
+
+    &__list {
+        display: flex;
+        justify-content:space-between;
+        list-style-type: none;
+    }
+    &__btn {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: transparent;
+        transition: 0.5s;
+
+        &:hover {
+            transition: box-shadow 0.5s;
+            box-shadow:0 0 5px #fff, inset 0 0 5px #fff;
+            cursor: pointer;
+        }
+
+        &--blue {
+            background-color: #1200ff;
+        }
+        &--white {
+            background-color: #fff
+        }
+        &--red {
+            background-color: #ff0000;
+        }
+        &--aqua {
+            background-color: #00ffe4;
+        }
+    }
+}
+.slider--blue {
+    background-color: #1200ff;
+}
+.slider--white {
+    background-color: #fff
+}
+.slider--red {
+    background-color: #ff0000;
+}
+.slider--aqua {
+    background-color: #00ffe4;
+}
+.description {
+    width: 35%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+		&__title {
+            font-size: 2em;
+            color: $primary-color;
+		}
+
+		&__text {
+            color: rgba($color: #fff, $alpha: 0.2);
+		}
+
+		&__select {
+            display: flex;
+        }
+    }
+.select {
+
+    &__option {
+        display: flex;
+        padding: 0.5em;
+        background-color: $primary-background;
+        border:1px solid $primary-color;
+        color: $primary-color;
+        margin-left: 0.2em;
+    }
+}
+.golden {
+    color: #f7bf16;
+}
+.grey {
+    color: #9fa4ac;
+}
+.product-add {
+    background-color: #29303c;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 1em;
+    width: 90%;
+    cursor: pointer;
+}

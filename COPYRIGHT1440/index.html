@@ -60,8 +60,8 @@
                 <div class="header-bottom__container">
                     <div class="header-bottom__registration registration registration--smallerdesk">
                         <div class="registration__contant">
-                            <h1 class="registration__title title title--main">COPYRIGHT</h1>
-                            <h2 class="registration__small-title">REGISTRATION IN THE UK</h2>
+                            <h1 class="registration__title title title--main">Copyright</h1>
+                            <h2 class="registration__small-title">Registration in the uk</h2>
                             <p class="registration__text">
                                 Copyright.co.uk is the UK choice for private online copyright registration services. 
                                 With a network of more than 50 websites worldwide.
@@ -238,29 +238,25 @@
                         </div>
                     </div>
                     <h2 class="achievements__title title title--secondary">Companies Who Trust Us</h2>
-                    <div class="achievements__companies companies">
-                        <div class="companies__image1"></div>
-                        <div class="companies__image2"></div>
-                        <div class="companies__image3"></div>
-                        <div class="companies__image4"></div>
-                        <div class="companies__image5"></div>
-                        <div class="companies__image6"></div>
-                    </div>
-                    <div class="achievements__slider slider">
-                        <label class="slider__item">
-                            <input name="2" type="radio" class="slider__btn" checked>
-                            <span class="slider__fake fake"></span>
-                        </label>
-
-                        <label class="slider__item">
-                            <input name="2" type="radio" class="slider__btn">
-                            <span class="slider__fake fake"></span>
-                        </label>
-
-                        <label class="slider__item">
-                            <input name="2" type="radio" class="slider__btn">
-                            <span class="slider__fake fake"></span>
-                        </label>
+                    <div class="sslider">
+                        <div class="sslider__item">
+                            <img src="img/companies/enser1.svg" alt="enser1">
+                        </div>
+                        <div class="sslider__item">
+                            <img src="img/companies/cansor2.svg" alt="cansor2">
+                        </div>
+                        <div class="sslider__item">
+                            <img src="img/companies/odoo3.svg" alt="odoo3">
+                        </div>
+                        <div class="sslider__item sslider__item--peptone">
+                            <img src="img/companies/peptone4.svg" alt="peptone4">
+                        </div>
+                        <div class="sslider__item">
+                            <img src="img/companies/ebay5.svg" alt="ebay5">
+                        </div>
+                        <div class="sslider__item">
+                            <img src="img/companies/dropbox6.svg" alt="dropbox6">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -270,7 +266,7 @@
                 <div class="banner__subscribe subscribe">
                     <form action="#" method="POST" enctype="multipart/form-data" class="subscribe__email email">
                         <img src="img/Subscribe/Union.svg" alt="email" class="email__image">
-                        <label><input type="email" placeholder="Enter your email" maxlength="30" class="email__input"></label>
+                        <label class="email__item"><input type="email" placeholder="Enter your email" maxlength="43" class="email__input"></label>
                     </form>
                     <button class="subscribe__button button button--email">
                         <span class="button__emailtext">Subscribe</span>
@@ -377,7 +373,7 @@
                 <div class="mail__subscribe subscribe">
                     <form action="#" method="POST" enctype="multipart/form-data" class="subscribe__email email">
                         <img src="img/Subscribe/Union.svg" alt="email" class="email__image">
-                        <label><input type="email" placeholder="Enter your email" maxlength="30" class="email__input"></label>
+                        <label class="email__item"><input type="email" placeholder="Enter your email" maxlength="43" class="email__input"></label>
                     </form>
                     <button class="subscribe__button button button--email">
                         <span class="button__emailtext">Subscribe</span>
@@ -390,8 +386,8 @@
                 <div class="footer-top">
                     <div class="footer-top__follow follow">
                         <img src="img/footer/footerlogo.svg" alt="logo" class="follow__logo follow__logo--mobile">
-                        <div class="follow__messengers follow__messengers">
-                            <span>Follow Us</span>
+                        <div class="follow__messengers">
+                            <span class="follow__text">Follow Us</span>
                             <a href="#"><img src="img/footer/Facebook_40_Icon_Web.svg" alt="fasebook" class="follow__icon"></a>
                             <a href="#"><img src="img/footer/Twitter_40_Icon_Web.svg" alt="twitter" class="follow__icon"></a>
                         </div>
@@ -411,10 +407,16 @@
                     </nav>
                 </div>
                 <div class="footer-bottom">
-                    <span class="footer-bottom__text">© Copyright 2001-2020 Copyright .co.uk - All rights reserved - Legal</span>
+                    <script>
+                        document.write("&copy Copyright 2001 - "+ new Date().getFullYear()+ " Copyright .co.uk - All rights reserved - Legal");
+                    </script>
                 </div>
             </div>
         </footer>
-    </div>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </body>
 </html>
