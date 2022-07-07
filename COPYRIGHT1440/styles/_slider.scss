@@ -64,7 +64,10 @@
         }
 
         &--peptone {
-            padding-right: 70px;
+
+            @media screen and (max-width:1080px) {
+                padding-right: 70px;
+            }
         }
     }
 }

@@ -294,8 +294,10 @@
     transform: scale(0.5);
   }
 }
-.sslider__item--peptone {
-  padding-right: 70px;
+@media screen and (max-width: 1080px) {
+  .sslider__item--peptone {
+    padding-right: 70px;
+  }
 }
 
 .slick-track {
