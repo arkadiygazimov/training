@@ -62,22 +62,9 @@
         }
     }
 
-    &--howdo {
-        background-image: url(../img/blog/HowDo.png);
-        background-repeat: no-repeat;
-        background-size: 100% 227px;
-    }
-
-    &--whattype {
-        background-image: url(../img/blog/whatType.png);
-        background-repeat: no-repeat;
-        background-size: 100% 227px;
-    }
-
-    &--whatis {
-        background-image: url(../img/blog/whatis.png);
-        background-repeat: no-repeat;
-        background-size: 100% 227px;
+    &__img {
+        width: 100%;
+        height: 227px;
     }
 
     &--reviewbox {

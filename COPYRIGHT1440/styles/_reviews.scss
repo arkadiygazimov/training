@@ -33,6 +33,9 @@
 }
 
 .cards {
+    @media screen and (max-width:390px) {
+        padding: 0 5px;
+    }
 
     &__box {
         position: relative;
@@ -72,35 +75,37 @@
     }
 
     &__cards-image {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        object-fit: cover;
         position: absolute;
         left: 24px;
         top: -34px;
     }
 
     &__cards-text {
+        height: 72px;
         margin-top: 52px;
         line-height: 24px;
         color: $font-color-secondary;
     }
 
     &__cards-name {
-        position: absolute;
-        top: 124px;
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
     }
 
     &__cards-profession {
-        position: absolute;
-        top: 148px;
+        padding-top: 4px;
         font-size: 14px;
         line-height: 20px;
         color: $font-color-secondary;
     }
 
     &__cards-button {
-        position: absolute;
-        top: 200px;
+        margin-top: 32px;
+        width: 100%;
     }
 }

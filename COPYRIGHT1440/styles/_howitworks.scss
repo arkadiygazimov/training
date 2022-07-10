@@ -67,5 +67,10 @@
         padding-top: 10px;
         color: $font-color-secondary;
         text-align: center;
+
+        @media screen and (max-width:400px) {
+            font-size: 14px;
+            line-height: 1.25;
+        }
     }
 }

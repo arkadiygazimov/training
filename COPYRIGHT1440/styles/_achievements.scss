@@ -73,6 +73,7 @@
 
     &__text {
         margin-top: 16px;
+        padding: 0 5px;
         @include adaptiv-font(18, 16);
         line-height: 1.4;
     }

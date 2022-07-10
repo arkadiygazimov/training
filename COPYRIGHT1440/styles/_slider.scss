@@ -43,9 +43,8 @@
 .sslider {
     margin-top: 35px;
 
-
-
     &__item {
+        width: 281px;
 
         @media screen and (max-width:1024px) {
             transform: scale(0.8);
@@ -63,10 +62,13 @@
             transform: scale(0.5);
         }
 
-        &--peptone {
+        &--last {
+            padding-right: 88px;
+        }
 
-            @media screen and (max-width:1080px) {
-                padding-right: 70px;
+        &--peptone {
+            @media screen and (max-width:1024px) {
+                padding-right: 88px;
             }
         }
     }
@@ -74,7 +76,33 @@
 
 .slick-track {
     display: flex;
-    column-gap: 50px;
+    column-gap: 88px;
+    margin-left: -200px;
+
+    @media screen and (max-width:1025px) {
+        margin-left: -100px;
+    }
+
+    @media screen and (max-width:850px) {
+        margin-left: -180px;
+    }
+
+    @media screen and (max-width:769px) {
+        margin-left: -220px;
+    }
+
+    @media screen and (max-width:500px) {
+        margin-left: -350px;
+    }
+
+    @media screen and (max-width:400px) {
+        margin-left: -370px;
+    }
+
+    
+    @media screen and (max-width:350px) {
+        margin-left: -410px;
+    }
 }
 
 .slick-list {
@@ -100,8 +128,8 @@
 
 .sslider .slick-dots button {
     font-size: 0.0000000000000000001px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border: none;
     background-color: #0759E4;
     opacity: 0.3;

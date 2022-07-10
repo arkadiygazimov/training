@@ -34,6 +34,10 @@
         @media screen and (max-width:770px) {
             width: 100%;
         }
+
+        @media screen and (max-width:390px) {
+            padding: 0 5px;
+        }
     }
 
     &__button {
@@ -64,7 +68,7 @@
 .box {
 
     &__blog-text {
-        margin: 251px 10px 0 32px;
+        margin: 24px 10px 0 32px;
         font-size: 18px;
         line-height: 28px;
         font-weight: 700;
