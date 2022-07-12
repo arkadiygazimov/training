@@ -46,5 +46,10 @@
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
       border-radius: 50%; }
-    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    .owl-theme .owl-dots .owl-dot.active span {
       background: #0759E4; }
+
+      .owl-theme .owl-dots .owl-dot:hover span {
+        transition: 0.5s;
+        background: rgba(105, 154, 239, 0.5);
+      }
