@@ -76,3 +76,11 @@ $maxWidth-margins: 615;
     $maxWidth-margins: $maxWidth-margins - 450;
     margin-bottom: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 450px) / #{$maxWidth-margins}));
 }
+
+// padding
+
+@mixin adaptiv-padding-bottom($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    padding-bottom: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}

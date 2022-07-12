@@ -42,100 +42,24 @@
 
 .sslider {
     margin-top: 35px;
+    @include adaptiv-padding-bottom(235, 100);
+    display: flex;
+    justify-content: space-around;
 
-    &__item {
-        width: 281px;
+    &__image {
+        height: 85px;
+        object-fit: contain;
 
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1025px) {
+            transform: scale(0.9);
+        }
+
+        @media screen and (max-width:850px) {
             transform: scale(0.8);
         }
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:620px) {
             transform: scale(0.7);
         }
-
-        @media screen and (max-width:500px) {
-            transform: scale(0.6);
-        }
-
-        @media screen and (max-width:410px) {
-            transform: scale(0.5);
-        }
-
-        &--last {
-            padding-right: 88px;
-        }
-
-        &--peptone {
-            @media screen and (max-width:1024px) {
-                padding-right: 88px;
-            }
-        }
     }
-}
-
-.slick-track {
-    display: flex;
-    column-gap: 88px;
-    margin-left: -200px;
-
-    @media screen and (max-width:1025px) {
-        margin-left: -100px;
-    }
-
-    @media screen and (max-width:850px) {
-        margin-left: -180px;
-    }
-
-    @media screen and (max-width:769px) {
-        margin-left: -220px;
-    }
-
-    @media screen and (max-width:500px) {
-        margin-left: -350px;
-    }
-
-    @media screen and (max-width:400px) {
-        margin-left: -370px;
-    }
-
-    
-    @media screen and (max-width:350px) {
-        margin-left: -410px;
-    }
-}
-
-.slick-list {
-    overflow: hidden;
-}
-
-.sslider .slick-dots {
-    padding: 25px 0 135px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
-
-    @media screen and (max-width:590px) {
-        padding-bottom: 90px;
-    }
-}
-
-.sslider .slick-dots li {
-    list-style: none;
-}
-
-
-.sslider .slick-dots button {
-    font-size: 0.0000000000000000001px;
-    width: 8px;
-    height: 8px;
-    border: none;
-    background-color: #0759E4;
-    opacity: 0.3;
-    border-radius: 50%;
-}
-
-.sslider .slick-dots li.slick-active button {
-    opacity: 1;
 }

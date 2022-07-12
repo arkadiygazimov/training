@@ -264,110 +264,29 @@
 
 .sslider {
   margin-top: 35px;
-}
-.sslider__item {
-  width: 281px;
-}
-@media screen and (max-width: 1024px) {
-  .sslider__item {
-    transform: scale(0.8);
-  }
-}
-@media screen and (max-width: 768px) {
-  .sslider__item {
-    transform: scale(0.7);
-  }
-}
-@media screen and (max-width: 500px) {
-  .sslider__item {
-    transform: scale(0.6);
-  }
-}
-@media screen and (max-width: 410px) {
-  .sslider__item {
-    transform: scale(0.5);
-  }
-}
-.sslider__item--last {
-  padding-right: 88px;
-}
-@media screen and (max-width: 1024px) {
-  .sslider__item--peptone {
-    padding-right: 88px;
-  }
-}
-
-.slick-track {
+  padding-bottom: calc(100px + 135 * ((100vw - 320px) / 1120));
   display: flex;
-  -moz-column-gap: 88px;
-       column-gap: 88px;
-  margin-left: -200px;
+  justify-content: space-around;
+}
+.sslider__image {
+  height: 85px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 1025px) {
-  .slick-track {
-    margin-left: -100px;
+  .sslider__image {
+    transform: scale(0.9);
   }
 }
 @media screen and (max-width: 850px) {
-  .slick-track {
-    margin-left: -180px;
+  .sslider__image {
+    transform: scale(0.8);
   }
 }
-@media screen and (max-width: 769px) {
-  .slick-track {
-    margin-left: -220px;
+@media screen and (max-width: 620px) {
+  .sslider__image {
+    transform: scale(0.7);
   }
-}
-@media screen and (max-width: 500px) {
-  .slick-track {
-    margin-left: -350px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .slick-track {
-    margin-left: -370px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .slick-track {
-    margin-left: -410px;
-  }
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.sslider .slick-dots {
-  padding: 25px 0 135px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-@media screen and (max-width: 590px) {
-  .sslider .slick-dots {
-    padding-bottom: 90px;
-  }
-}
-
-.sslider .slick-dots li {
-  list-style: none;
-}
-
-.sslider .slick-dots button {
-  font-size: 0px;
-  width: 8px;
-  height: 8px;
-  border: none;
-  background-color: #0759E4;
-  opacity: 0.3;
-  border-radius: 50%;
-}
-
-.sslider .slick-dots li.slick-active button {
-  opacity: 1;
 }
 
 .subscribe {
@@ -972,9 +891,6 @@
 
 .choose {
   margin-top: 150px;
-  background-image: url(../img/choose_Vector.svg);
-  background-repeat: no-repeat;
-  background-position: 1379px 0;
 }
 .choose__container {
   margin: 0 auto;
