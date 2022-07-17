@@ -214,28 +214,28 @@
                             <div class="numbers__elipse">
                                 <img src="img/achievements/registred.svg" alt="Registered">
                             </div>
-                            <h3 class="numbers__title">+500 000</h3>
+                            <h3 class="numbers__title">+<span id="out-1"></span> 000</h3>
                             <p class="numbers__text">Registered Copyright</p>
                         </div>
                         <div class="numbers__item">
                             <div class="numbers__elipse">
                                 <img src="img/achievements/calls.svg" alt="Calls">
                             </div>
-                            <h3 class="numbers__title">+1000</h3>
+                            <h3 class="numbers__title">+<span id="out-2"></span></h3>
                             <p class="numbers__text">Daily Calls</p>
                         </div>
                         <div class="numbers__item">
                             <div class="numbers__elipse">
                                 <img src="img/achievements/mails.svg" alt="Mails">
                             </div>
-                            <h3 class="numbers__title">+500</h3>
+                            <h3 class="numbers__title">+<span id="out-3"></span></h3>
                             <p class="numbers__text">Daily Mails Replied</p>
                         </div>
                         <div class="numbers__item">
                             <div class="numbers__elipse">
                                 <img src="img/achievements/Satisfied.svg" alt="customers">
                             </div>
-                            <h3 class="numbers__title">+50 000</h3>
+                            <h3 class="numbers__title">+<span id="out-4"></span> 000</h3>
                             <p class="numbers__text">Satisfied customers</p>
                         </div>
                     </div>
@@ -306,57 +306,126 @@
                 </button>
             </section>
             <section class="reviews">
-                <div class="reviews__container">
-                    <div class="reviews__cards cards">
-                        <div class="cards__box box box--reviewbox">
-                            <div class="box__cards-content">
-                                <img src="img/reviews/Ellipse_32.png" alt="photo" class="box__cards-image">
-                                <p class="box__cards-text">To protect my source code I use copyright.co.uk</p>
-                                <p class="box__cards-name">Peter Norman</p>
-                                <p class="box__cards-profession">Programmer</p>
-                                <button class="box__cards-button button button--register">
-                                    <span class="button__startedtext">Register</span>
-                                </button>
+                <div class="owl-carousel owl-carousel2 owl-theme">
+                    <div class="reviews__container">
+                        <div class="reviews__cards cards">
+                            <div class="cards__box box box--reviewbox">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--first-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_32.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">To protect my source code I use copyright.co.uk</p>
+                                    <p class="box__cards-name">Peter Norman</p>
+                                    <p class="box__cards-profession">Programmer</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cards__box box box--reviewbox cards__box--mobile">
-                            <div class="box__cards-content">
-                                <img src="img/reviews/Ellipse_10.png" alt="photo" class="box__cards-image">
-                                <p class="box__cards-text">When I write a book, i register a copyright</p>
-                                <p class="box__cards-name">Helen Green</p>
-                                <p class="box__cards-profession">Writer</p>
-                                <button class="box__cards-button button button--register">
-                                    <span class="button__startedtext">Register</span>
-                                </button>
+                            <div class="cards__box box box--reviewbox cards__box--mobile">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--second-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_10.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">When I write a book, i register a copyright</p>
+                                    <p class="box__cards-name">Helen Green</p>
+                                    <p class="box__cards-profession">Writer</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cards__box box box--reviewbox cards__box--smallerdesk">
-                            <div class="box__cards-content">
-                                <img src="img/reviews/Ellipse_16.png" alt="photo" class="box__cards-image">
-                                <p class="box__cards-text">The unlimited plan of copyright.co.uk allow me to protect all my photos</p>
-                                <p class="box__cards-name">Albert Scott</p>
-                                <p class="box__cards-profession">Photograph</p>
-                                <button class="box__cards-button button button--register">
-                                    <span class="button__startedtext">Register</span>
-                                </button>
+                            <div class="cards__box box box--reviewbox cards__box--smallerdesk">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--third-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_16.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">The unlimited plan of copyright.co.uk allow me to protect all my photos</p>
+                                    <p class="box__cards-name">Albert Scott</p>
+                                    <p class="box__cards-profession">Photograph</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="reviews__slider slider">
-                        <label class="slider__item">
-                            <input name="1" type="radio" class="slider__btn" checked>
-                            <span class="slider__fake fake"></span>
-                        </label>
-
-                        <label class="slider__item">
-                            <input name="1" type="radio" class="slider__btn">
-                            <span class="slider__fake fake"></span>
-                        </label>
-
-                        <label class="slider__item">
-                            <input name="1" type="radio" class="slider__btn">
-                            <span class="slider__fake fake"></span>
-                        </label>
+                    <div class="reviews__container">
+                        <div class="reviews__cards cards">
+                            <div class="cards__box box box--reviewbox">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--first-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_32.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">To protect my source code I use copyright.co.uk</p>
+                                    <p class="box__cards-name">Peter Norman</p>
+                                    <p class="box__cards-profession">Programmer</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cards__box box box--reviewbox cards__box--mobile">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--second-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_10.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">When I write a book, i register a copyright</p>
+                                    <p class="box__cards-name">Helen Green</p>
+                                    <p class="box__cards-profession">Writer</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cards__box box box--reviewbox cards__box--smallerdesk">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--third-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_16.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">The unlimited plan of copyright.co.uk allow me to protect all my photos</p>
+                                    <p class="box__cards-name">Albert Scott</p>
+                                    <p class="box__cards-profession">Photograph</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__container">
+                        <div class="reviews__cards cards">
+                            <div class="cards__box box box--reviewbox">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--first-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_32.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">To protect my source code I use copyright.co.uk</p>
+                                    <p class="box__cards-name">Peter Norman</p>
+                                    <p class="box__cards-profession">Programmer</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cards__box box box--reviewbox cards__box--mobile">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--second-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_10.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">When I write a book, i register a copyright</p>
+                                    <p class="box__cards-name">Helen Green</p>
+                                    <p class="box__cards-profession">Writer</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cards__box box box--reviewbox cards__box--smallerdesk">
+                                <div class="box__cards-content">
+                                    <div class="box__cards-image box__cards-image--third-card"></div>
+                                    <!-- <img src="img/reviews/Ellipse_16.png" alt="photo" class="box__cards-image"> -->
+                                    <p class="box__cards-text">The unlimited plan of copyright.co.uk allow me to protect all my photos</p>
+                                    <p class="box__cards-name">Albert Scott</p>
+                                    <p class="box__cards-profession">Photograph</p>
+                                    <button class="box__cards-button button button--register">
+                                        <span class="button__startedtext">Register</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

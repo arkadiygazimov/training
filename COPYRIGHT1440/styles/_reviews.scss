@@ -1,15 +1,18 @@
 .reviews {
-    &__container {
-        background-image: url(../img/reviewbg.svg);
-        background-repeat: no-repeat;
-        background-position: 35px 74px;
+    background-image: url(../img/reviewbg.svg);
+    background-repeat: no-repeat;
+    background-position: 35px 74px;
+    padding-top: 129px;
+    padding-bottom: 150px;
+
+    @media screen and (max-width:768px) {
+        padding-bottom: 110px;
     }
 
     &__cards {
         width: $container-width;
         max-width: $container-width-max;
         margin: 0 auto;
-        padding-top: 129px;
         display: flex;
         justify-content: space-between;
 
@@ -19,15 +22,6 @@
         
         @media screen and (max-width:586px) {
             width: $container-width;
-        }
-    }
-
-    &__slider {
-        margin: 50px auto 0;
-        padding-bottom: 150px;
-
-        @media screen and (max-width:768px) {
-            padding-bottom: 110px;
         }
     }
 }
@@ -75,13 +69,25 @@
     }
 
     &__cards-image {
+        background-size: cover;
         width: 72px;
         height: 72px;
         border-radius: 50%;
-        object-fit: cover;
         position: absolute;
         left: 24px;
         top: -34px;
+
+        &--first-card {
+            background-image: url(../img/reviews/Ellipse_32.png);
+        }
+
+        &--second-card {
+            background-image: url(../img/reviews/Ellipse_10.png);
+        }
+
+        &--third-card {
+            background-image: url(../img/reviews/Ellipse_16.png);
+        }
     }
 
     &__cards-text {
