@@ -8,6 +8,10 @@
 
     &__title {
         margin-top: 104px;
+
+        @media screen and (max-width:375px) {
+            width: $container-width;
+        }
     }
 
     &__companies {
@@ -34,6 +38,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 100%;
+    text-align: center;
 
     @media screen and (max-width:799px) {
         grid-template-columns:  1fr 1fr;
@@ -61,73 +66,15 @@
 
     &__title {
         margin-top: 32px;
+        font-weight: 700;
+        @include adaptiv-font(32, 26);
+        line-height: 1.25;
     }
 
     &__text {
         margin-top: 16px;
-    }
-}
-
-.companies {
-
-    &__image1 {
-        background-image: url(../img/companies/enser1.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 120px;
-        height: 72px;
-        margin-right: 20px;
-
-        @media screen and (max-width:768px) {
-            display: none;
-        }
-    }
-
-    &__image2 {
-        background-image: url(../img/companies/cansor2.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 116px;
-        height: 72px;
-        margin-right: 20px;
-    }
-
-    &__image3 {
-        background-image: url(../img/companies/odoo3.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 192px;
-        height: 72px;
-        margin-right: 20px;
-    }
-
-    &__image4 {
-        background-image: url(../img/companies/peptone4.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 289px;
-        height: 72px;
-        margin-right: 20px;
-    }
-
-    &__image5 {
-        background-image: url(../img/companies/ebay5.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 158px;
-        height: 72px;
-        margin-right: 20px;
-    }
-
-    &__image6 {
-        background-image: url(../img/companies/dropbox6.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 150px;
-        height: 72px;
-
-        @media screen and (max-width:768px) {
-            display: none;
-        }
+        padding: 0 5px;
+        @include adaptiv-font(18, 16);
+        line-height: 1.4;
     }
 }

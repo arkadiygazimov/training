@@ -1,30 +1,35 @@
 .reviews {
-    &__container {
-        background-image: url(../img/reviewbg.svg);
-        background-repeat: no-repeat;
-        background-position: 35px 74px;
+    background-image: url(../img/reviewbg.svg);
+    background-repeat: no-repeat;
+    background-position: 35px 74px;
+    padding-top: 129px;
+    padding-bottom: 150px;
+
+    @media screen and (max-width:768px) {
+        padding-bottom: 110px;
     }
 
     &__cards {
         width: $container-width;
         max-width: $container-width-max;
         margin: 0 auto;
-        padding-top: 129px;
         display: flex;
         justify-content: space-between;
-    }
 
-    &__slider {
-        margin: 50px auto 0;
-        padding-bottom: 150px;
-
-        @media screen and (max-width:768px) {
-            padding-bottom: 110px;
+        @media screen and (max-width:770px) {
+            width: 100%;
+        }
+        
+        @media screen and (max-width:586px) {
+            width: $container-width;
         }
     }
 }
 
 .cards {
+    @media screen and (max-width:390px) {
+        padding: 0 5px;
+    }
 
     &__box {
         position: relative;
@@ -37,7 +42,7 @@
         }
 
         &--mobile {
-            @media screen and (max-width:768px) {
+            @media screen and (max-width:590px) {
                 display: none;
             }
         }
@@ -64,35 +69,49 @@
     }
 
     &__cards-image {
+        background-size: cover;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
         position: absolute;
         left: 24px;
         top: -34px;
+
+        &--first-card {
+            background-image: url(../img/reviews/Ellipse_32.png);
+        }
+
+        &--second-card {
+            background-image: url(../img/reviews/Ellipse_10.png);
+        }
+
+        &--third-card {
+            background-image: url(../img/reviews/Ellipse_16.png);
+        }
     }
 
     &__cards-text {
+        height: 72px;
         margin-top: 52px;
         line-height: 24px;
         color: $font-color-secondary;
     }
 
     &__cards-name {
-        position: absolute;
-        top: 124px;
         font-size: 14px;
         font-weight: 700;
         line-height: 20px;
     }
 
     &__cards-profession {
-        position: absolute;
-        top: 148px;
+        padding-top: 4px;
         font-size: 14px;
         line-height: 20px;
         color: $font-color-secondary;
     }
 
     &__cards-button {
-        position: absolute;
-        top: 200px;
+        margin-top: 32px;
+        width: 100%;
     }
 }

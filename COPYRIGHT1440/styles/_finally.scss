@@ -8,7 +8,7 @@
     color: $font-color-third;
 
     &__title {
-        padding-top: 104px;
+        padding: 104px 5px 0;
         font-size: 50px;
         font-weight: 700;
         line-height: 68px;
@@ -27,6 +27,7 @@
 
     &__quote {
         margin-top: 29px;
+        padding: 0 10px;
         font-size: 28px;
         line-height: 42px;
 
@@ -53,6 +54,7 @@
 
     &__text {
         margin-top: 80px;
+        padding: 0 10px;
         font-size: 32px;
         font-weight: 600;
         line-height: 42px;

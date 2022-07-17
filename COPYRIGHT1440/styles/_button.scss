@@ -16,6 +16,7 @@
     &--login-mobile {
         border: none;
         background-color: transparent;
+        margin-top: 3px;
 
         @media screen and (min-width:992px) {
             display: none;
@@ -24,6 +25,7 @@
         @media screen and (max-width:992px) {
             display: block;
         }
+
     }
 
     &--registration {
@@ -31,7 +33,7 @@
         height: 48px;
         background: linear-gradient(266.21deg, #2196F5 -11.46%, #0868C6 100%);
         box-shadow: 0px 7px 18px -8px rgba(39, 125, 201, 0.88);
-        border: 2px solid transparent;
+        border: none;
 
         &:hover {
             box-shadow: 0px 10px 22px -8px rgba(39, 125, 201, 0.88);
@@ -97,6 +99,8 @@
     }
 
     &__registertext {
+        font-weight: 600;
+        line-height: 1.5;
         color: $font-color-third;
     }
 

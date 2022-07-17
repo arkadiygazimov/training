@@ -13,6 +13,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (max-width:790px) {
+            width: 100%;
+        }
     }
     
     &__plan {
@@ -43,6 +47,10 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    @media screen and (max-width:390px) {
+        padding: 0 5px;
+    }
 }
 
 .box {
@@ -61,6 +69,21 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width:770px) {
+            transform: scale(0.9);
+        }
+
+        @media screen and (max-width:740px) {
+            transform: scale(0.8);
+            margin-top: 50px;
+        }
+
+        
+        @media screen and (max-width:586px) {
+            margin-top: 85px;
+            transform: scale(1);
+        }
     }
 
     &__plan-price {
@@ -88,6 +111,8 @@
     &__plan-text {
         color: $font-color-secondary;
         margin-bottom: 5px;
+        padding: 0 10px;
+        text-align: center;
     }
 
     &__plan-link {
