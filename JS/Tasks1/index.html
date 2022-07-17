@@ -7,6 +7,11 @@
     <title>Lesson 23</title>
     <style>
         .wrapper {
+            display: flex;
+            column-gap: 50px;
+        }
+
+        .task-part {
             margin: 15px 15px;
             display: flex;
             flex-direction: column;
@@ -21,43 +26,54 @@
 </head>
 <body>
     <div class="wrapper">
-        <div><button onclick="findAverageNumbers()">1.Find the Average Numbers</button></div>
-        <div><button onclick="findBodyDensity()">2.find the Body Density</button></div>
-        <div><button onclick="findPopulationDensity()">3.Find Population Density</button></div>
-        <div><button onclick="calcLinearEquation()">4.Linear Equation</button></div>
-        <div><button onclick="findHypotenuse()">5.Find Hypotenuse</button></div>
-        <div><button onclick="findRingArea()">6.Find Ring Area</button></div>
-        <div><button onclick="findTrianglePerimetr()">7.Find Triangle Perimetr</button></div>
-        <div><button onclick="findTrapezoidPerimetr()">8.Find Trapezoid Perimetr</button></div>
-        <div><button onclick="findAverageNumbersModule()">9.Find the Average Numbers Module</button></div>
-        <div><button onclick="findRectangleValues()">10.Find Rectangle Values</button></div>
-        <div><button onclick="arithmeticOperations()">11.Arithmetic Operations</button></div>
-        <div><button onclick="findCuboid()">12.Find Cuboid</button></div>
-        <div><button onclick="numberMatching()">24.Number Matching</button></div>
-        <div><button onclick="calcTimePassed()">25.Time Passed</button></div>
-        <div>
-            <span>Enter first Date:</span>
-            <input type="number" class="input input--first-day" placeholder="Enter day">
-            <input type="number" class="input input--first-month" placeholder="Enter month">
-            <input type="number" class="input input--first-year" placeholder="Enter year"><br>
-            <span>Enter second Date:</span>
-            <input type="number" class="input input--second-day" placeholder="Enter day">
-            <input type="number" class="input input--second-month" placeholder="Enter month">
-            <input type="number" class="input input--second-year" placeholder="Enter year"><br>
-            
-            <button onclick="compareDates()">26. Compare Dates</button>
-        </div>
-        <div>
-            <span>rectangle options:</span>
-            <input type="number" class="input input--first-side" placeholder="Enter side A">
-            <input type="number" class="input input--second-side" placeholder="Enter side B"><br>
-            <span>square options:</span>
-            <input type="number" class="input input--square-side" placeholder="Enter side"><br>
+        <div class="task-part">
+            <div><button onclick="findAverageNumbers()">1.Find the Average Numbers</button></div>
+            <div><button onclick="findBodyDensity()">2.find the Body Density</button></div>
+            <div><button onclick="findPopulationDensity()">3.Find Population Density</button></div>
+            <div><button onclick="calcLinearEquation()">4.Linear Equation</button></div>
+            <div><button onclick="findHypotenuse()">5.Find Hypotenuse</button></div>
+            <div><button onclick="findRingArea()">6.Find Ring Area</button></div>
+            <div><button onclick="findTrianglePerimetr()">7.Find Triangle Perimetr</button></div>
+            <div><button onclick="findTrapezoidPerimetr()">8.Find Trapezoid Perimetr</button></div>
+            <div><button onclick="findAverageNumbersModule()">9.Find the Average Numbers Module</button></div>
+            <div><button onclick="findRectangleValues()">10.Find Rectangle Values</button></div>
+            <div><button onclick="arithmeticOperations()">11.Arithmetic Operations</button></div>
+            <div><button onclick="findCuboid()">12.Find Cuboid</button></div>
+            <div><button onclick="numberMatching()">24.Number Matching</button></div>
+            <div><button onclick="calcTimePassed()">25.Time Passed</button></div>
+            <div>
+                <span>Enter first Date:</span>
+                <input type="number" class="input input--first-day" placeholder="Enter day">
+                <input type="number" class="input input--first-month" placeholder="Enter month">
+                <input type="number" class="input input--first-year" placeholder="Enter year"><br>
+                <span>Enter second Date:</span>
+                <input type="number" class="input input--second-day" placeholder="Enter day">
+                <input type="number" class="input input--second-month" placeholder="Enter month">
+                <input type="number" class="input input--second-year" placeholder="Enter year"><br>
+                
+                <button onclick="compareDates()">26. Compare Dates</button>
+            </div>
+            <div>
+                <span>rectangle options:</span>
+                <input type="number" class="input input--first-side" placeholder="Enter side A">
+                <input type="number" class="input input--second-side" placeholder="Enter side B"><br>
+                <span>square options:</span>
+                <input type="number" class="input input--square-side" placeholder="Enter side"><br>
 
-            <button onclick="findNumberOfSquares()">27.Square in a rectangle</button>
+                <button onclick="findNumberOfSquares()">27.Square in a rectangle</button>
+            </div>
+        </div>
+        <div class="task-part">
+            <div><button onclick="checkInequality()">1.Check Inequality</button></div>
+            <div><button onclick="checkDivisor()">2.Check Divisor</button></div>
+            <div><button onclick="findNumbers()">13.Find Numbers</button></div>
+            <div><button onclick="findPalindrom()">14.Find Palindrom</button></div>
+            <div><button onclick="findSameNumbers()">15.Find 3 Same Numbers</button></div>
+            <div><button onclick="findLuckyNumber()">17.Find Lucky Number</button></div>
         </div>
     </div>
 
     <script src="src/script.js"></script>
+    <script src="src/script2.js"></script>
 </body>
 </html> 
