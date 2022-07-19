@@ -155,3 +155,120 @@ function findLuckyNumber() {
         alert(luckyNumber(number));
     }
 }
+
+//------------------- 17 сумма его первых трех цифр  равна сумме его последних трех цифр
+
+function getFootballResult() {
+
+    const points = +prompt('Enter the number of points received by the team: 0, 1 or 3');
+
+    if (points < 0 || points === 2 || points > 3) {
+        alert('Error, please ad 0, 1 or 3');
+        getFootballResult();
+    } else {
+        let strResult = 0;
+
+        function footballResult(strResult) {
+
+            switch (points) {
+                case 3:
+                strResult = 'Win!';
+                break;
+
+                case 1:
+                strResult = 'Draw';
+                break;
+
+                case 0:
+                strResult = 'Loose';
+                break;
+            }
+            return strResult;
+        }
+        
+        alert(footballResult(strResult));
+    }
+}
+
+//------------------- 25 Найти разрядность натурального числа
+
+function findMaxNumberPosition() {
+
+    const number = prompt('Enter the number');
+    let arr = ('' + number).split('').map(Number);
+    let arrMax = Math.max.apply(null, arr);
+
+    if (isNaN(number) || number <= 0) {
+        alert('Error, please try again');
+        findMaxNumberPosition();
+    } else {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arrMax) {
+                let result = arr.length - i;
+
+                alert(result);
+            }
+        }
+    }
+}
+
+//--- 26 Дано натуральных числа А и B. Найти сумму чисел, каждое из которых меньше или равно В с помощью которых можно представить А 
+
+function findSumNumbers() {
+
+    const numberA = +prompt('Enter the number');
+    const numberB = +prompt('Enter the number');
+
+    if (numberA <= 0 || numberB <= 0 || numberA <= numberB) {
+        alert('Error, please try again');
+        findSumNumbers();
+    } else {
+
+        const divider = Math.trunc(numberA / numberB);
+        const remainder = numberA % numberB;
+
+        let result = (numberB + '+').repeat(divider);
+
+        result = result + remainder;
+
+        alert(result);
+    }
+
+}
+
+//------ 27 Дано натуральное число. Определить являются ли его все цифры разными
+
+
+function findDifferentDigits() {
+
+    const number = prompt('Enter natural number');
+
+    if (isNaN(number)) {
+        alert('Error, please try again');
+        findDifferentDigits();
+    } else if (number === null) {
+        alert('Cancel');
+    } else {
+
+        const arr = ('' + number).split('').map(Number);
+        const variousNumbers = arr.sort();
+        let sameNumbers = 0;
+
+        for (let i = 0; i < variousNumbers.length; i++) {
+                if (variousNumbers[i] === variousNumbers[i+1]) {
+                    sameNumbers = false;
+                    break;
+                } else {
+                    continue;
+                }
+        }
+
+        const checkNumbers = false;
+
+        if (checkNumbers === sameNumbers) {
+            alert('this number has the same digits!!');
+        } else {
+            alert('all digits are different!!');
+        }
+    }
+}
