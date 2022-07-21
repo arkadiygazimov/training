@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Lesson 23</title>
+    <style>
+        .wrapper {
+            margin: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .input {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .input--full-seconds {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div><button onclick="compareNumbers()">Compare Numbers</button></div>
+        <div><button onclick="findFactorial()">Find Factorial</button></div>
+        <div><button onclick="connectNumbers()">Connect Numbers</button></div>
+        <div><button onclick="findArea()">Find Area</button></div>
+        <div><button onclick="checkPerfectNumber()">Check Perfect Number</button></div>
+        <div><button onclick="findPerfectNumber()">Find Perfect Number</button></div>
+        <div>
+            <span>Enter any time:</span>
+            <input type="number" class="input input--hours" placeholder="Enter hours">
+            <input type="number" class="input input--minutes" placeholder="Enter minutes">
+            <input type="number" class="input input--seconds" placeholder="Enter seconds"><br>
+            
+            <button onclick="showTime()">Show Time</button>
+        </div>
+        <div>
+            <span>Enter time in seconds:</span>
+            <input type="number" class="input input--full-seconds" placeholder="Enter time in seconds"><br>
+
+            <button onclick="convertTime()">Convert Time</button>
+        </div>
+        <div>
+            <span>Enter first Time(first time must be bigger than second):</span>
+            <input type="number" class="input input--first-hours" placeholder="Enter hours">
+            <input type="number" class="input input--first-minutes" placeholder="Enter minutes">
+            <input type="number" class="input input--first-seconds" placeholder="Enter seconds"><br>
+            <span>Enter second Time:</span>
+            <input type="number" class="input input--second-hours" placeholder="Enter hours">
+            <input type="number" class="input input--second-minutes" placeholder="Enter minutes">
+            <input type="number" class="input input--second-seconds" placeholder="Enter seconds"><br>
+            
+            <button onclick="compareDates()">26. Compare Dates</button>
+        </div>
+    </div>
+    
+    <script src="src/script.js"></script>
+</body>
+</html>
