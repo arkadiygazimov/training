@@ -23,6 +23,7 @@ ul {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50px top;
 }
 
 @media screen and (max-width: 849px) {
@@ -148,7 +149,7 @@ ul {
   padding-top: calc(80px + 70 * ((100vw - 320px) / 1120));
 }
 .header-bottom__fresh {
-  padding-top: calc(50px + 250 * ((100vw - 320px) / 1120));
+  padding-top: calc(50px + 100 * ((100vw - 320px) / 1120));
   padding-bottom: calc(140px + 150 * ((100vw - 320px) / 1120));
   max-width: 400px;
 }
@@ -228,7 +229,6 @@ ul {
   background-color: #70bfff;
 }
 .services__container {
-  display: flex;
   padding-top: calc(60px + 90 * ((100vw - 320px) / 1120));
   padding-bottom: calc(60px + 70 * ((100vw - 320px) / 1120));
   display: flex;
@@ -262,7 +262,6 @@ ul {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  margin-left: calc(10px + 86 * ((100vw - 320px) / 1120));
 }
 @media screen and (max-width: 800px) {
   .cards {
