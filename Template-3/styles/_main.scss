@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: Montserrat;
+    background-color: #fff;
+    color: #000;
+}
+
+[class*="__container"] {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.border {
+    border: 1px solid #E0E0E0;
+}
+
+.link {
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    color: #4985FF;
+}
+
+.hiden-block {
+    
+    @media screen and (max-width:1180px) {
+        display: none;
+    }
+}
