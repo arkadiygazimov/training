@@ -1,0 +1,177 @@
+.header {
+    background-image: url(../img/header_photo.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &::before {
+        @media screen and (max-width:851px) {
+            content: '';
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-image: url(../img/header_photo.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            z-index: 30;
+        }
+    }
+
+    &__container {
+        padding: 40px 10px 0 10px;
+        @include adaptiv-padding-bottom(335,100);
+        color: #ffff;
+        text-align: center;
+    }
+
+    &__title {
+        padding: 260px 0 20px 0;
+        @include adaptiv-font(32,24);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    &__slogan {
+        margin: 0 auto;
+        max-width: 830px;
+        padding-bottom: 50px;
+        @include adaptiv-font(48,28);
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    &__burger {
+        @media screen and (max-width:851px) {
+
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+            height: 20px;
+            z-index: 999;
+
+            &::before {
+                content: "";
+                background-color: #fff;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: 0;
+                transition: 0.5s;
+            }
+
+            &::after {
+                content: "";
+                background-color: #fff;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+                transition: 0.5s;
+            }
+
+            & span {
+                background-color: #fff;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: 9px;
+            }
+
+            &.active::before {
+                transform: rotate(45deg);
+                background-color: #fff;
+                transition: transform 0.5s;
+                top: 9px;
+            }
+
+            &.active::after {
+                transform: rotate(-45deg);
+                background-color: #fff;
+                transition: transform 0.5s;
+                bottom: 9px;
+            }
+
+            &.active span {
+                display: none;
+            }
+        }
+    }
+}
+
+.nav {
+
+    &.active {
+
+        @media screen and (max-width:851px) {
+            right: -20%;
+            transition: 0.5s;
+        }
+    }
+
+    @media screen and (max-width:851px) {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 3;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 40px;
+
+        @media screen and (max-width:851px) {
+            
+            z-index: 5;
+            margin-right: 20%;
+            padding-top: 200px;
+            flex-direction: column;
+            font-size: 24px;
+            text-transform: uppercase;
+            row-gap: 30px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.2;
+        z-index: 3;
+
+        @media screen and (max-width:851px) {
+            color: #000;
+        }
+    }
+
+    &__bg {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.3;
+        z-index: 2;
+
+        &.active {
+
+            @media screen and (max-width:851px) {
+                left: 0;
+                transition: 0.5s;
+            }
+        }
+    }
+}
