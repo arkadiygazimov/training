@@ -1,7 +1,7 @@
 // burger
 $(document).ready( function() {
     $('.header__burger').click(function(event) {
-        $('.header__burger,.header__nav,.nav__bg').toggleClass('active');
+        $('.header__burger,.header__nav,.nav-bg').toggleClass('active');
     });
 });
 
