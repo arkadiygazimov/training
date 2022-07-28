@@ -73,3 +73,11 @@ $maxWidth: 1440;
     $maxWidth: $maxWidth - 890;
     column-gap: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 890px) / #{$maxWidth}));
 }
+
+// position
+
+@mixin adaptiv-top($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    top: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}

@@ -18,9 +18,14 @@
     &__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        column-gap: 20px;
         width: 98%;
         margin-top: 25px;
         justify-items: center;
+
+        @media screen and (max-width:650px) {
+            column-gap: 0;
+        }
 
         @media screen and (max-width:410px) {
             grid-template-columns:  1fr 1fr;
@@ -31,6 +36,15 @@
         @media screen and (max-width:315px) {
            display: flex;
            flex-direction: column;
+        }
+
+        &--hidden {
+            margin-top: 0;
+            display: none;
+
+            &.active {
+                display: grid;
+            }
         }
     }
 
@@ -55,7 +69,13 @@
         margin: 25px 5px;
 
         &--hidden {
-            @media screen and (max-width:768px) {
+            @media screen and (max-width:924px) {
+                display: none;
+            }
+        }
+
+        &--smalldesk {
+            @media screen and (max-width:1163px) {
                 display: none;
             }
         }

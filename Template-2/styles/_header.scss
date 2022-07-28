@@ -36,9 +36,6 @@
 }
 
 .nav {
-    @media screen and (max-width:849px) {
-        display: none;
-    }
 
     &__list {
         display: flex;
@@ -63,77 +60,122 @@
 
 // Burger start
 
-.burger {
+@media screen and (max-width:851px) {
 
-    &__input {
-        display: none;
-    }
-}
+    .header-top {
 
-.fake-burger {
-    display: none;
-
-    @media screen and (max-width:849px) {
-        display: inline-block;
-        width: 30px;
-        height: 2px;
-        background-color: $font-color-main;
-        margin: 0 5px 0 30px;
-        position: relative;
-        opacity: 1;
-        transition: 0.5s;
-        margin-bottom: 4px;
-
-        &::before {
-            content: "";
-            position: absolute;
+        &__burger {
+    
             display: block;
-            width: 100%;
-            height: 2px;
-            background-color: $font-color-main;
-            opacity: 1;
-            top: 10px;
-            transition: 0.5s;
-        }
+            position: fixed;
+            right: 20px;
+            width: 30px;
+            height: 20px;
+            z-index: 999;
 
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: $font-color-main;
-            opacity: 1;
-            bottom: 10px;
-            transition: 0.5s;
-        }
-    }
-}
-
-.burger {
-    &__input {
-        display: none;
-
-        &:checked + .fake-burger {
-            @media screen and (max-width:849px) {
-                transform: rotate(45deg);
-                transition: 0.5s;
-            }
-        }
-
-        &:checked + .fake-burger::before {
-            @media screen and (max-width:849px) {
-                transform: rotate(-90deg);
+            &::before {
+                content: "";
+                background-color: $font-color-main;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
                 top: 0;
                 transition: 0.5s;
             }
-        }
 
-        &:checked + .fake-burger::after {
-            @media screen and (max-width:849px) {
-                transform: scale(0);
+            &::after {
+                content: "";
+                background-color: $font-color-main;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                bottom: 0;
                 transition: 0.5s;
             }
+
+            & span {
+                background-color: $font-color-main;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: 9px;
+            }
+
+            &.active::before {
+                transform: rotate(45deg);
+                background-color: $font-color-main;
+                transition: transform 0.5s;
+                top: 9px;
+            }
+
+            &.active::after {
+                transform: rotate(-45deg);
+                background-color: $font-color-main;
+                transition: transform 0.5s;
+                bottom: 9px;
+            }
+
+            &.active span {
+                display: none;
+            }
+        }
+    }
+
+    // burger-nav
+
+    .nav {
+        position: fixed;
+        right: -100%;
+        @include adaptiv-top(150,80);
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        background-color: $background-color-services;
+        z-index: 3;
+
+        &.active {
+
+            right: -20%;
+            transition: 0.5s;
+        }
+    
+        &__list {
+                
+            z-index: 5;
+            margin-right: 20%;
+            padding-top: 100px;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+            text-transform: uppercase;
+            row-gap: 30px;
+        }
+
+        &__link {
+            font-size: 24px;
+        }
+    }
+
+    // background
+
+    .nav-bg {
+        position: fixed;
+        left: -100%;
+        @include adaptiv-top(150,80);
+        transition: 0.5s;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.3;
+        z-index: 2;
+    
+        &.active {
+
+            left: 0;
+            transition: 0.5s;
         }
     }
 }

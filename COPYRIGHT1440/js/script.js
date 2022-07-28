@@ -71,78 +71,100 @@ e.preventDefault();
 
 //------------------------------------- Dinamic Numbers
 
-function dinamicNumbers() {
+// number 1
 
-    const time = 100;
-    const step1 = 10;
-    const step2 = 50;
-    const step3 = 1;
-    const step4 = 10;
+let number1 = document.querySelector('.number1'),
+numberTop1 = number1.getBoundingClientRect().top,
+start1 = +number1.innerHTML;
 
-    function outNum1(num, elem) {
-        let l = document.querySelector('#' + elem);
-        n = 0;
-        let t = Math.round(time / (time / step1));
-        let interval = setInterval(() => {
-            n = n + step1;
-            if (n === num) {
-                clearInterval(interval);
+window.addEventListener('scroll', function onScroll() {
+    if(window.pageYOffset > numberTop1 - window.innerHeight / 2) {
+        this.removeEventListener('scroll', onScroll);
+        let interval1 = setInterval(function() {
+            number1.innerHTML = ++start1*5;
+            if(start1 === 100) {
+                clearInterval(interval1);
             }
-            l.innerHTML = n;
-        },
-        t)
+        }, 20);
     }
+});
 
-    outNum1(500, 'out-1');
+// number 2
 
-    function outNum2(num, elem) {
-        let l2 = document.querySelector('#' + elem);
-        n2 = 0;
-        let t2 = Math.round(time / (time / step2));
-        let interval = setInterval(() => {
-            n2 = n2 + step2;
-            if (n2 === num) {
-                clearInterval(interval);
+let number2 = document.querySelector('.number2'),
+numberTop2 = number2.getBoundingClientRect().top,
+start2 = +number2.innerHTML;
+
+window.addEventListener('scroll', function onScroll() {
+    if(window.pageYOffset > numberTop2 - window.innerHeight / 2) {
+        this.removeEventListener('scroll', onScroll);
+        let interval2 = setInterval(function() {
+            number2.innerHTML = ++start2*5;
+            if(start2 === 200) {
+                clearInterval(interval2);
             }
-            l2.innerHTML = n2;
-        },
-        t2)
+        }, 10);
     }
+});
 
-    outNum2(1000, 'out-2');
+// number 3
 
-    function outNum3(num, elem) {
-        let l3 = document.querySelector('#' + elem);
-        n3 = 0;
-        let t3 = Math.round(time / (time / step3));
-        let interval = setInterval(() => {
-            n3 = n3 + step3;
-            if (n3 === num) {
-                clearInterval(interval);
+let number3 = document.querySelector('.number3'),
+numberTop3 = number3.getBoundingClientRect().top,
+start3 = +number3.innerHTML;
+
+window.addEventListener('scroll', function onScroll() {
+    if(window.pageYOffset > numberTop3 - window.innerHeight / 2) {
+        this.removeEventListener('scroll', onScroll);
+        let interval3 = setInterval(function() {
+            number3.innerHTML = ++start3;
+            if(start3 === 50) {
+                clearInterval(interval3);
             }
-            l3.innerHTML = n3;
-        },
-        t3)
+        }, 40);
     }
+});
 
-    outNum3(50, 'out-3');
+// number 4
 
-    function outNum4(num, elem) {
-        let l4 = document.querySelector('#' + elem);
-        n4 = 0;
-        let t4 = Math.round(time / (time / step4));
-        let interval = setInterval(() => {
-            n4 = n4 + step4;
-            if (n4 === num) {
-                clearInterval(interval);
+let number4 = document.querySelector('.number4'),
+numberTop4 = number4.getBoundingClientRect().top,
+start4 = +number4.innerHTML;
+
+window.addEventListener('scroll', function onScroll() {
+    if(window.pageYOffset > numberTop4 - window.innerHeight / 2) {
+        this.removeEventListener('scroll', onScroll);
+        let interval4 = setInterval(function() {
+            number4.innerHTML = ++start4*5;
+            if(start4 === 100) {
+                clearInterval(interval4);
             }
-            l4.innerHTML = n4;
-        },
-        t4)
+        }, 20);
     }
+});
 
-    outNum4(500, 'out-4');
+//----------- view oll buttons
 
-}
+// pricing
 
-dinamicNumbers();
+$(document).ready( function() {
+    $('.pricing__button').click(function(event) {
+        $('.plan--hidden').toggleClass('active');
+    });
+});
+
+// chouse
+
+$(document).ready( function() {
+    $('.choose__button').click(function(event) {
+        $('.choose__content--hidden').toggleClass('active');
+    });
+});
+
+// blog
+
+$(document).ready( function() {
+    $('.blog__button').click(function(event) {
+        $('.blog__content--hidden').toggleClass('active');
+    });
+});

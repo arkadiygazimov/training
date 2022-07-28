@@ -31,6 +31,7 @@
 }
 
 .plan {
+
     &__box {
         margin: 35px 5px 0;
     }
@@ -50,6 +51,14 @@
 
     @media screen and (max-width:390px) {
         padding: 0 5px;
+    }
+
+    &--hidden {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
     }
 }
 
