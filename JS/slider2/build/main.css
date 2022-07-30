@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #8e44ad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider {
+  width: 750px;
+  height: 500px;
+  position: relative;
+}
+.slider__image {
+  width: 750px;
+  height: 500px;
+  position: absolute;
+}
+.slider__image--1 {
+  background-image: url(../img/gallery-1.png);
+  background-size: cover;
+}
+.slider__image--2 {
+  background-image: url(../img/gallery-2.png);
+  background-size: cover;
+}
+.slider__image--3 {
+  background-image: url(../img/gallery-3.png);
+  background-size: cover;
+}
+.slider__image--4 {
+  background-image: url(../img/gallery-4.png);
+  background-size: cover;
+}
+.slider__image--5 {
+  background-image: url(../img/gallery-5.png);
+  background-size: cover;
+}
+
+.btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+.btn--prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 15px;
+  top: 50%;
+}
+.btn--next {
+  right: 15px;
+  top: 50%;
+}
+.btn__img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=main.css.map */
