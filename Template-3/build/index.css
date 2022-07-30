@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat-VariableFont_wght.ttf);
@@ -49,6 +50,25 @@
   color: white;
   text-align: center;
 }
+.header__logo {
+  position: absolute;
+  top: 0;
+  line-height: 80px;
+  font-size: 28px;
+  font-weight: 700;
+}
+@media screen and (max-width: 851px) {
+  .header__logo {
+    display: block;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    line-height: 70px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #323232;
+  }
+}
 .header__title {
   padding: 260px 0 20px 0;
   font-size: calc(24px + 8 * ((100vw - 320px) / 1120));
@@ -56,6 +76,7 @@
   line-height: 1.2;
 }
 .header__slogan {
+  max-width: 830px;
   margin: 0 auto;
   max-width: 830px;
   padding-bottom: 50px;
@@ -85,7 +106,7 @@
 }
 @media screen and (max-width: 851px) {
   .nav__link {
-    color: #000;
+    color: #323232;
   }
 }
 
@@ -93,19 +114,17 @@
   .header::before {
     content: "";
     width: 100%;
-    height: 80px;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url(../img/header_photo.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-color: #F6F6F8;
     z-index: 30;
   }
   .header__burger {
     display: block;
     position: fixed;
-    top: 20px;
+    top: 25px;
     right: 20px;
     width: 30px;
     height: 20px;
@@ -113,7 +132,7 @@
   }
   .header__burger::before {
     content: "";
-    background-color: #fff;
+    background-color: #323232;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -124,7 +143,7 @@
   }
   .header__burger::after {
     content: "";
-    background-color: #fff;
+    background-color: #323232;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -134,7 +153,7 @@
     transition: 0.5s;
   }
   .header__burger span {
-    background-color: #fff;
+    background-color: #323232;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -144,7 +163,7 @@
   .header__burger.active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    background-color: #fff;
+    background-color: #323232;
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
@@ -154,7 +173,7 @@
   .header__burger.active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    background-color: #fff;
+    background-color: #323232;
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
@@ -194,18 +213,19 @@
   }
   .nav-bg {
     position: fixed;
-    left: -100%;
+    left: -150%;
     top: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0;
     z-index: 2;
   }
   .nav-bg.active {
     left: 0;
+    opacity: 0.4;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -855,6 +875,15 @@ img.thumbnail {
     padding-left: 10px;
   }
 }
+.footer-top__border {
+  border: 1px solid #E0E0E0;
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .footer-top__border {
+    display: block;
+  }
+}
 
 .nav-box {
   display: -webkit-box;
@@ -865,17 +894,47 @@ img.thumbnail {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 30px;
+  position: relative;
 }
 .nav-box__title {
   padding-bottom: 5px;
+  position: relative;
+}
+@media screen and (max-width: 700px) {
+  .nav-box__title::before {
+    position: absolute;
+    content: "︾";
+    top: 5px;
+    right: 25px;
+  }
+  .nav-box__title.active::before {
+    content: "︽";
+    top: -5px;
+  }
 }
 .nav-box__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  .nav-box__item {
+    position: absolute;
+    top: -30%;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .nav-box__item.active {
+    position: relative;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
 .nav-box__link {
   text-decoration: none;

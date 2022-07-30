@@ -73,9 +73,9 @@ e.preventDefault();
 
 // number 1
 
-let number1 = document.querySelector('.number1'),
-numberTop1 = number1.getBoundingClientRect().top,
-start1 = +number1.innerHTML;
+const number1 = document.querySelector('.number1');
+const numberTop1 = number1.getBoundingClientRect().top;
+let start1 = +number1.innerHTML;
 
 window.addEventListener('scroll', function onScroll() {
     if(window.pageYOffset > numberTop1 - window.innerHeight / 2) {
@@ -91,9 +91,9 @@ window.addEventListener('scroll', function onScroll() {
 
 // number 2
 
-let number2 = document.querySelector('.number2'),
-numberTop2 = number2.getBoundingClientRect().top,
-start2 = +number2.innerHTML;
+const number2 = document.querySelector('.number2');
+const numberTop2 = number2.getBoundingClientRect().top;
+let start2 = +number2.innerHTML;
 
 window.addEventListener('scroll', function onScroll() {
     if(window.pageYOffset > numberTop2 - window.innerHeight / 2) {
@@ -109,9 +109,9 @@ window.addEventListener('scroll', function onScroll() {
 
 // number 3
 
-let number3 = document.querySelector('.number3'),
-numberTop3 = number3.getBoundingClientRect().top,
-start3 = +number3.innerHTML;
+const number3 = document.querySelector('.number3');
+const numberTop3 = number3.getBoundingClientRect().top;
+let start3 = +number3.innerHTML;
 
 window.addEventListener('scroll', function onScroll() {
     if(window.pageYOffset > numberTop3 - window.innerHeight / 2) {
@@ -127,9 +127,9 @@ window.addEventListener('scroll', function onScroll() {
 
 // number 4
 
-let number4 = document.querySelector('.number4'),
-numberTop4 = number4.getBoundingClientRect().top,
-start4 = +number4.innerHTML;
+const number4 = document.querySelector('.number4');
+const numberTop4 = number4.getBoundingClientRect().top;
+let start4 = +number4.innerHTML;
 
 window.addEventListener('scroll', function onScroll() {
     if(window.pageYOffset > numberTop4 - window.innerHeight / 2) {
@@ -147,24 +147,39 @@ window.addEventListener('scroll', function onScroll() {
 
 // pricing
 
-$(document).ready( function() {
-    $('.pricing__button').click(function(event) {
-        $('.plan--hidden').toggleClass('active');
-    });
-});
+const pricingButton = document.querySelector('.pricing__button');
+
+pricingButton.addEventListener('click', function () {
+
+    const pricingActive = document.querySelector('.plan--hidden');
+    const btnView = document.querySelector('.pricing__button')
+
+    btnView.classList.toggle('active');
+    pricingActive.classList.toggle('active');
+}, false);
 
 // chouse
 
-$(document).ready( function() {
-    $('.choose__button').click(function(event) {
-        $('.choose__content--hidden').toggleClass('active');
-    });
-});
+const chooseButton = document.querySelector('.choose__button');
+
+chooseButton.addEventListener('click', function () {
+
+    const chooseActive = document.querySelector('.choose__content--hidden');
+    const btnView = document.querySelector('.choose__button')
+
+    btnView.classList.toggle('active');
+    chooseActive.classList.toggle('active');
+}, false);
 
 // blog
 
-$(document).ready( function() {
-    $('.blog__button').click(function(event) {
-        $('.blog__content--hidden').toggleClass('active');
-    });
-});
+const blogButton = document.querySelector('.blog__button');
+
+blogButton.addEventListener('click', function () {
+
+    const blogActive = document.querySelector('.blog__content--hidden');
+    const blogBtnView = document.querySelector('.blog__button')
+
+    blogBtnView.classList.toggle('active');
+    blogActive.classList.toggle('active');
+}, false);
