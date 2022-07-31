@@ -120,3 +120,16 @@ navSocial.addEventListener('click', function () {
         navItemsSocial[i].classList.toggle('active');
     }
 }, false);
+
+//--------------
+
+const scrollTop = document.querySelector('.scroll-arrow');
+
+scrollTop.addEventListener('click', function() {
+
+    $('html').animate(
+
+        { scrollTop: 0 }, 
+        { duration: 500 }
+    );
+});
