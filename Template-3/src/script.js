@@ -123,7 +123,16 @@ navSocial.addEventListener('click', function () {
 
 //--------------
 
+
 const scrollTop = document.querySelector('.scroll-arrow');
+
+window.addEventListener('scroll', function() {
+    if(window.pageYOffset > 500) {
+        scrollTop.classList.add('active');
+    } else {
+        scrollTop.classList.remove('active');
+    }
+  });
 
 scrollTop.addEventListener('click', function() {
 

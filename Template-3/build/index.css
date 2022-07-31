@@ -44,9 +44,7 @@
   height: 50px;
   right: 15px;
   bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background-color: #F6F6F8;
   opacity: 0.4;
   cursor: pointer;
@@ -64,6 +62,11 @@
 }
 .scroll-arrow:hover {
   opacity: 0.6;
+}
+.scroll-arrow.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .scroll-arrow__image {
   width: 50px;
