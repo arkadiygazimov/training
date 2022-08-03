@@ -120,3 +120,25 @@ navSocial.addEventListener('click', function () {
         navItemsSocial[i].classList.toggle('active');
     }
 }, false);
+
+//--------------
+
+
+const scrollTop = document.querySelector('.scroll-arrow');
+
+window.addEventListener('scroll', function() {
+    if(window.pageYOffset > 500) {
+        scrollTop.classList.add('active');
+    } else {
+        scrollTop.classList.remove('active');
+    }
+  });
+
+scrollTop.addEventListener('click', function() {
+
+    $('html').animate(
+
+        { scrollTop: 0 }, 
+        { duration: 500 }
+    );
+});
